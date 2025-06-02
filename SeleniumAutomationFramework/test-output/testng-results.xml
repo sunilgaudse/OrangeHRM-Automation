@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-04-29T22:59:27 IST" name="Suite" finished-at="2025-04-29T23:00:12 IST" duration-ms="44978">
+    <groups>
+    </groups>
+    <test started-at="2025-04-29T22:59:27 IST" name="Test" finished-at="2025-04-29T23:00:12 IST" duration-ms="44978">
+      <class name="com.tmb.tests.OrangeHRMTest">
+        <test-method is-config="true" signature="setup([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.OrangeHRMTest@69e153c5]" started-at="2025-04-29T22:59:29 IST" name="setup" finished-at="2025-04-29T22:59:32 IST" duration-ms="3202" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@f88bfbe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.OrangeHRMTest@69e153c5]" started-at="2025-04-29T22:59:29 IST" name="setup" finished-at="2025-04-29T22:59:41 IST" duration-ms="12146" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@59bbe88a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.OrangeHRMTest@69e153c5]" started-at="2025-04-29T22:59:29 IST" name="setup" finished-at="2025-04-29T22:59:47 IST" duration-ms="18054" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@5d8ab698]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginLogoutTest(java.util.Map)[pri:0, instance:com.tmb.tests.OrangeHRMTest@69e153c5]" started-at="2025-04-29T22:59:32 IST" name="loginLogoutTest" data-provider="getData" finished-at="2025-04-29T22:59:40 IST" duration-ms="8073" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{fname=testing mini bytes, password=admin123, browser=chrome, testname=loginLogoutTest, execute=yes, username=Admin}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginLogoutTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tmb.tests.OrangeHRMTest@69e153c5]" started-at="2025-04-29T22:59:40 IST" name="teardown" finished-at="2025-04-29T22:59:40 IST" duration-ms="423" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="loginLogoutTest(java.util.Map)[pri:0, instance:com.tmb.tests.OrangeHRMTest@69e153c5]" started-at="2025-04-29T22:59:41 IST" name="loginLogoutTest" data-provider="getData" finished-at="2025-04-29T22:59:56 IST" duration-ms="15245" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{fname=subscribe, password=admin123, browser=firefox, testname=loginLogoutTest, execute=yes, username=admin123}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: .oxd\-userdropdown\-name
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-SUNIL', ip: '192.168.201.35', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 138.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20250421163656, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 10632, moz:profile: C:\Users\bhrx\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: ccbecc99-31f0-46a1-b76c-e95dab20d48c
+*** Element info: {Using=class name, value=oxd-userdropdown-name}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: .oxd\-userdropdown\-name
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-SUNIL', ip: '192.168.201.35', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 138.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20250421163656, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 10632, moz:profile: C:\Users\bhrx\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: ccbecc99-31f0-46a1-b76c-e95dab20d48c
+*** Element info: {Using=class name, value=oxd-userdropdown-name}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:412)
+at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.tmb.pages.BasePage.click(BasePage.java:10)
+at com.tmb.pages.OrangeHRMHomePage.clickWelcome(OrangeHRMHomePage.java:17)
+at com.tmb.tests.OrangeHRMTest.loginLogoutTest(OrangeHRMTest.java:22)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginLogoutTest -->
+        <test-method signature="loginLogoutTest(java.util.Map)[pri:0, instance:com.tmb.tests.OrangeHRMTest@69e153c5]" started-at="2025-04-29T22:59:47 IST" name="loginLogoutTest" data-provider="getData" finished-at="2025-04-29T22:59:50 IST" duration-ms="3665" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{fname=amuthan, password=admin123, browser=firefox, testname=loginLogoutTest, execute=yes, username=Admin}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginLogoutTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tmb.tests.OrangeHRMTest@69e153c5]" started-at="2025-04-29T22:59:50 IST" name="teardown" finished-at="2025-04-29T22:59:52 IST" duration-ms="1568" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tmb.tests.OrangeHRMTest@69e153c5]" started-at="2025-04-29T22:59:56 IST" name="teardown" finished-at="2025-04-29T22:59:57 IST" duration-ms="1210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.OrangeHRMTest@69e153c5]" started-at="2025-04-29T22:59:57 IST" name="setup" finished-at="2025-04-29T23:00:02 IST" duration-ms="4818" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@ed91d8d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.OrangeHRMTest@69e153c5]" started-at="2025-04-29T22:59:57 IST" name="setup" finished-at="2025-04-29T23:00:07 IST" duration-ms="9160" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@446626a7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="newTest(java.util.Map)[pri:0, instance:com.tmb.tests.OrangeHRMTest@69e153c5]" started-at="2025-04-29T23:00:02 IST" name="newTest" data-provider="getData" finished-at="2025-04-29T23:00:06 IST" duration-ms="3718" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{fname=, password=admin123, browser=chrome, testname=newTest, execute=yes, username=Admin}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tmb.tests.OrangeHRMTest@69e153c5]" started-at="2025-04-29T23:00:06 IST" name="teardown" finished-at="2025-04-29T23:00:06 IST" duration-ms="279" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="newTest(java.util.Map)[pri:0, instance:com.tmb.tests.OrangeHRMTest@69e153c5]" started-at="2025-04-29T23:00:07 IST" name="newTest" data-provider="getData" finished-at="2025-04-29T23:00:10 IST" duration-ms="3588" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{fname=, password=admin123, browser=firefox, testname=newTest, execute=yes, username=Admin}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tmb.tests.OrangeHRMTest@69e153c5]" started-at="2025-04-29T23:00:10 IST" name="teardown" finished-at="2025-04-29T23:00:12 IST" duration-ms="1650" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.tmb.tests.OrangeHRMTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
