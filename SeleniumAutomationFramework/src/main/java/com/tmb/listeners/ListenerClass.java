@@ -4,13 +4,14 @@ import java.util.Arrays;
 
 import org.testng.ISuite;
 import org.testng.ISuiteListener;
+import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 import com.tmb.reports.ExtentLogger;
 import com.tmb.reports.ExtentReport;
 
-public class ListenerClass implements ITestListener ,ISuiteListener{
+public  class ListenerClass implements ITestListener ,ISuiteListener{
 //public static Logger logger = LogManager.getLogger(ListenerClass.class);
 
 	@Override
@@ -59,6 +60,24 @@ public class ListenerClass implements ITestListener ,ISuiteListener{
 	@Override
 	public void onTestSkipped(ITestResult result) {
 		ExtentLogger.skip(result.getMethod().getMethodName()+ " is skip.");
+	}
+
+	@Override
+	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void onStart(ITestContext context) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void onFinish(ITestContext context) {
+		// TODO Auto-generated method stub
+		
 	}
 
 	
