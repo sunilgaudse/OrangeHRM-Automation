@@ -164,8 +164,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;SARIKA-PC&apos;, ip: &apos;10.221.202.35&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20250717180000, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 7792, moz:profile: C:\Users\bhrx\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 8758fb9e-8757-4648-9b0b-9f92ac313cf0
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20250717180000, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 21548, moz:profile: C:\Users\bhrx\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: e9212693-3d51-4047-a55c-5c2d19dee30f
 *** Element info: {Using=class name, value=oxd-userdropdown-name}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -238,7 +238,7 @@ Session ID: 8758fb9e-8757-4648-9b0b-9f92ac313cf0
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite data-provider-thread-count=&quot;3&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+&lt;suite data-provider-thread-count=&quot;1&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.tmb.listeners.ListenerClass&quot;/&gt;
     &lt;listener class-name=&quot;com.tmb.listeners.MethodInterceptor&quot;/&gt;
@@ -290,23 +290,23 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginLogoutTest')
 data.setCell(0, 2, 'com.tmb.tests.OrangeHRMTest')
-data.setCell(0, 3, 12405);
+data.setCell(0, 3, 12838);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'loginLogoutTest')
 data.setCell(1, 2, 'com.tmb.tests.OrangeHRMTest')
-data.setCell(1, 3, 4612);
+data.setCell(1, 3, 3834);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'newTest')
 data.setCell(2, 2, 'com.tmb.tests.OrangeHRMTest')
-data.setCell(2, 3, 3678);
+data.setCell(2, 3, 3571);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'newTest')
+data.setCell(3, 1, 'loginLogoutTest')
 data.setCell(3, 2, 'com.tmb.tests.OrangeHRMTest')
-data.setCell(3, 3, 3667);
+data.setCell(3, 3, 3407);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'loginLogoutTest')
+data.setCell(4, 1, 'newTest')
 data.setCell(4, 2, 'com.tmb.tests.OrangeHRMTest')
-data.setCell(4, 3, 3133);
+data.setCell(4, 3, 3352);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -339,66 +339,66 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.tmb.tests.OrangeHRMTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setup([{fname=testing mini bytes, password=admin123, browser=chrome, testname=loginLogoutTest, execute=yes...)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
                 <span class="method-name">setup([{fname=amuthan, password=admin123, browser=firefox, testname=loginLogoutTest, execute=yes, username...)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginLogoutTest({fname=amuthan, password=admin123, browser=firefox, testname=loginLogoutTest, execute=yes, username=...)</span>
+                <span class="method-start">8398 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">11810 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setup([{fname=subscribe, password=admin123, browser=firefox, testname=loginLogoutTest, execute=yes, userna...)</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-name">setup([{fname=testing mini bytes, password=admin123, browser=chrome, testname=loginLogoutTest, execute=yes...)</span>
+                <span class="method-start">13117 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginLogoutTest({fname=testing mini bytes, password=admin123, browser=chrome, testname=loginLogoutTest, execute=yes,...)</span>
-                <span class="method-start">5799 ms</span>
+                <span class="method-start">17914 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">21749 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup([{fname=subscribe, password=admin123, browser=firefox, testname=loginLogoutTest, execute=yes, userna...)</span>
+                <span class="method-start">21968 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">loginLogoutTest({fname=subscribe, password=admin123, browser=firefox, testname=loginLogoutTest, execute=yes, usernam...)</span>
-                <span class="method-start">8987 ms</span>
+                <span class="method-start">27641 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">10436 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">loginLogoutTest({fname=amuthan, password=admin123, browser=firefox, testname=loginLogoutTest, execute=yes, username=...)</span>
-                <span class="method-start">10557 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">13692 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">21529 ms</span>
+                <span class="method-start">40616 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup([{fname=, password=admin123, browser=firefox, testname=newTest, execute=yes, username=Admin}])</span>
-                <span class="method-start">22500 ms</span>
+                <span class="method-start">41555 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">newTest({fname=, password=admin123, browser=firefox, testname=newTest, execute=yes, username=Admin})</span>
+                <span class="method-start">47702 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">51055 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup([{fname=, password=admin123, browser=chrome, testname=newTest, execute=yes, username=Admin}])</span>
-                <span class="method-start">22500 ms</span>
+                <span class="method-start">52469 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">newTest({fname=, password=admin123, browser=chrome, testname=newTest, execute=yes, username=Admin})</span>
-                <span class="method-start">26233 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">newTest({fname=, password=admin123, browser=firefox, testname=newTest, execute=yes, username=Admin})</span>
-                <span class="method-start">29493 ms</span>
+                <span class="method-start">56706 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">29905 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">33183 ms</span>
+                <span class="method-start">60279 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

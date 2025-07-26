@@ -5,6 +5,25 @@
 	<groupId>org.testingmicrobytes</groupId>
 	<artifactId>SeleniumAutomationFramework</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>3.0.0</version> <!-- Specify the version -->
+            <configuration>
+                 <suiteXmlFiles>
+            <suiteXmlFile>testng.xml</suiteXmlFile>
+        </suiteXmlFiles>
+        <systemPropertyVariables>
+            <dataProviderThreadCount>5</dataProviderThreadCount>
+            <testThreadCount>5</testThreadCount>
+        </systemPropertyVariables>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
+
 	<dependencies>
 		<!--
 		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
@@ -118,12 +137,5 @@
 			<artifactId>webdrivermanager</artifactId>
 			<version>5.9.2</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
-        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
-<dependency>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-surefire-plugin</artifactId>
-    <version>3.5.3</version>
-</dependency>
 	</dependencies>
 </project>
