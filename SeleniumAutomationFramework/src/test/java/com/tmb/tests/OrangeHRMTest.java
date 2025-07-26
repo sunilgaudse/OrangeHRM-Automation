@@ -16,7 +16,7 @@ public class OrangeHRMTest extends BaseTests{
 	}
 	
 	@Test
-	public void loginLogoutTest(Map<String, String>data) {
+	public void verifyThatAdminCanLogInWithValidCredentials(Map<String, String>data) {
 		String title = new OrangeHRMLoginPage()
 				.enterUsername(data.get("username")).enterPassword(data.get("password")).clickLogin()
 				.clickWelcome().clickLogout()
@@ -25,14 +25,14 @@ public class OrangeHRMTest extends BaseTests{
 		.isEqualTo("OrangeHRM");
 	}
 	
-	@Test
-	public void newTest(Map<String, String>data) {
-		String title = new OrangeHRMLoginPage()
-				.enterUsername(data.get("username")).enterPassword(data.get("password")).clickLogin()
-				.clickWelcome().clickLogout()
-				.getTitle();
-		Assertions.assertThat(title)
-		.isEqualTo("OrangeHRM");
-	}
+//	@Test
+//	public void verifyThatAdminCannotLogInWithInvalidCredentials(Map<String, String>data) {
+//		String title = new OrangeHRMLoginPage()
+//				.enterUsername(data.get("username")).enterPassword(data.get("password")).clickLogin()
+//				.clickWelcome().clickLogout()
+//				.getTitle();
+//		Assertions.assertThat(title)
+//		.isEqualTo("OrangeHRM");
+//	}
 
 }
