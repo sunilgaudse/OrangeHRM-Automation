@@ -7,13 +7,18 @@ import org.testng.IAnnotationTransformer;
 import org.testng.annotations.ITestAnnotation;
 
 import com.tmb.utils.DataProviderUtils;
+import java.util.Map;
 
 public class AnnotationTransformer implements IAnnotationTransformer{
 
-	@Override
 	public void transform(ITestAnnotation annotation, Class testClass, Constructor testConstructor, Method testMethod) {
-		annotation.setDataProvider("getData");
-		annotation.setDataProviderClass(DataProviderUtils.class);
+		 if (testMethod != null 
+		            && testMethod.getParameterCount() == 1 
+		            && Map.class.isAssignableFrom(testMethod.getParameterTypes()[0])) {
+		            
+		            annotation.setDataProvider("getData");
+		            annotation.setDataProviderClass(DataProviderUtils.class);
+		        }
 		annotation.setRetryAnalyzer(RetryFailedTests.class);
 	}
 
