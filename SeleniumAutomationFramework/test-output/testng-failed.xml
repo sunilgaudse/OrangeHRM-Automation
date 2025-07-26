@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite data-provider-thread-count="3" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="com.tmb.listeners.ListenerClass"/>
-    <listener class-name="com.tmb.listeners.MethodInterceptor"/>
-    <listener class-name="com.tmb.listeners.AnnotationTransformer"/>
-  </listeners>
-  <test thread-count="5" parallel="methods" name="Test(failed)">
-    <classes>
-      <class name="com.tmb.tests.OrangeHRMTest">
-        <methods>
-          <include name="setup"/>
-          <include name="loginLogoutTest" invocation-numbers="2"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- com.tmb.tests.OrangeHRMTest -->
-    </classes>
-  </test> <!-- Test(failed) -->
+<suite data-provider-thread-count="3" name="Failed suite [Suite]"
+	guice-stage="DEVELOPMENT">
+	<listeners>
+		<listener class-name="com.tmb.listeners.ListenerClass" />
+		<listener class-name="com.tmb.listeners.MethodInterceptor" />
+		<listener
+			class-name="com.tmb.listeners.AnnotationTransformer" />
+	</listeners>
+	<test thread-count="5" parallel="methods" name="Test(failed)">
+		<classes>
+			<class name="com.tmb.tests.OrangeHRMTest">
+				<methods>
+					<include name="setup" />
+					<include name="loginLogoutTest" invocation-numbers="2" />
+					<include name="teardown" />
+				</methods>
+			</class> <!-- com.tmb.tests.OrangeHRMTest -->
+		</classes>
+	</test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

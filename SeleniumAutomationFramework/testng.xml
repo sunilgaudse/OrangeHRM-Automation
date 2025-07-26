@@ -4,16 +4,14 @@
 	<listeners>
 		<listener class-name="com.tmb.listeners.ListenerClass" />
 		<listener class-name="com.tmb.listeners.MethodInterceptor" />
-		<listener class-name="com.tmb.listeners.AnnotationTransformer" />
-		
+		<listener
+			class-name="com.tmb.listeners.AnnotationTransformer" />
+
 	</listeners>
 	<test thread-count="1" name="Test" parallel="methods">
 		<classes>
 			<class name="com.tmb.tests.OrangeHRMTest" />
-			<!--<class name="com.tmb.tests.LoginpageTest"/>
-      <class name="com.tmb.tests.HomepageTests"/>-->
+			<!--<class name="com.tmb.tests.LoginpageTest"/> <class name="com.tmb.tests.HomepageTests"/> -->
 		</classes>
-	</test> <!--
-	Test -->
-</suite> <!--
-Suite -->
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
