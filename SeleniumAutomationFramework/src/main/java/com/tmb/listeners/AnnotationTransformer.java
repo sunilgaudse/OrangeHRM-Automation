@@ -11,7 +11,7 @@ import java.util.Map;
 
 public class AnnotationTransformer implements IAnnotationTransformer{
 
-	public void transform(ITestAnnotation annotation, Class testClass, Constructor testConstructor, Method testMethod) {
+	public synchronized void transform(ITestAnnotation annotation, Class testClass, Constructor testConstructor, Method testMethod) {
 		 if (testMethod != null 
 		            && testMethod.getParameterCount() == 1 
 		            && Map.class.isAssignableFrom(testMethod.getParameterTypes()[0])) {
