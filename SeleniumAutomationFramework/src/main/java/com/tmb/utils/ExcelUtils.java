@@ -35,9 +35,9 @@ public final class ExcelUtils {
 				map =new HashMap();
 				for(int j=0;j<lastColumnNum;j++) {
 					String key = sheet.getRow(0).getCell(j).getStringCellValue();
-					System.out.println(key);
+//					System.out.println(key);
 					String value = sheet.getRow(i).getCell(j).getStringCellValue();
-					System.out.println(value);
+//					System.out.println(value);
 					map.put(key, value);
 				}
 				list.add(map);

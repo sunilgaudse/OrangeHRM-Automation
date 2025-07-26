@@ -11,7 +11,7 @@
       <class name="com.tmb.tests.OrangeHRMTest">
         <methods>
           <include name="setup"/>
-          <include name="verifyThatAdminCanLogInWithValidCredentials"/>
+          <include name="verifyThatAdminCannotLogInWithInvalidCredentials" invocation-numbers="0 1"/>
           <include name="teardown"/>
         </methods>
       </class> <!-- com.tmb.tests.OrangeHRMTest -->
