@@ -17,6 +17,7 @@ public class BaseTests {
 	@BeforeMethod
 	protected void setup(Object[]data) throws Exception {
 		Map<String, String> map = (Map<String, String>)data[0];
+		System.out.println(map.get("browser"));
 		Driver.initDriver(map.get("browser"));
 	}
 
