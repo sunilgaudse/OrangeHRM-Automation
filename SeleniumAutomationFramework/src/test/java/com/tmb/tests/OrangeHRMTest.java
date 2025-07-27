@@ -33,5 +33,13 @@ public class OrangeHRMTest extends BaseTests{
 		Assertions.assertThat(title)
 		.isEqualTo("Invalid credentials");
 	}
+	@Test
+	public void verifyThatAdminCannotLogInWithOnlyUsernameFilled(Map<String, String>data) {
+		String passwordRequiredString =new OrangeHRMLoginPage()
+				.enterUsername(data.get("username")).clickLogin1().requiredText();
+		Assertions.assertThat(passwordRequiredString)
+		.isEqualTo("Required");
+	}
+
 
 }
