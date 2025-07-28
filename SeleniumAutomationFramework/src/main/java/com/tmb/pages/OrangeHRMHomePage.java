@@ -12,10 +12,15 @@ import com.tmb.reports.ExtentReport;
 public final class OrangeHRMHomePage extends BasePage{
 	private final By profileName = By.className("oxd-userdropdown-name");
 	private final By logout = By.className("oxd-userdropdown-link");
+	private final By changePassword =By.xpath("//a[text()='Change Password']");
 	
 	public OrangeHRMHomePage clickWelcome() {
 		click(profileName,"profile name");
 		return this;
+	}
+	public OrangeHRMUpdatePasswordPage clickChangePassword() {
+		click(changePassword, "Change Password");
+		return new OrangeHRMUpdatePasswordPage();
 	}
 	public OrangeHRMLoginPage clickLogout() {
 		new WebDriverWait(DriverManager.getDriver(), 10)
