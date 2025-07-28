@@ -10,8 +10,8 @@ import com.tmb.listeners.MethodInterceptor;
 import com.tmb.pages.OrangeHRMLoginPage;
 
 @Listeners(MethodInterceptor.class)
-public class OrangeHRMTest extends BaseTests{
-	private OrangeHRMTest() {
+public class OrangeHRMLoginFunctionalityTest extends BaseTests{
+	private OrangeHRMLoginFunctionalityTest() {
 		
 	}
 	

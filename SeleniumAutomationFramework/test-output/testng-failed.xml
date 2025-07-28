@@ -8,15 +8,13 @@
   </listeners>
   <test thread-count="5" parallel="methods" name="Test(failed)">
     <classes>
-      <class name="com.tmb.tests.OrangeHRMTest">
+      <class name="com.tmb.tests.UserAccountManagementTest">
         <methods>
           <include name="setup"/>
-          <include name="verifyThatAdminCanLogInWithValidCredentials"/>
           <include name="teardown"/>
-          <include name="verifyThatAdminCannotLogInWithInvalidCredentials"/>
-          <include name="verifyThatAdminCannotLogInWithOnlyUsernameFilled"/>
+          <include name="verifyThatUserCanChangePasswordWithValidCredentials" invocation-numbers="0 1"/>
         </methods>
-      </class> <!-- com.tmb.tests.OrangeHRMTest -->
+      </class> <!-- com.tmb.tests.UserAccountManagementTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
