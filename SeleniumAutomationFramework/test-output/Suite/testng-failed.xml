@@ -13,6 +13,8 @@
           <include name="setup"/>
           <include name="verifyThatAdminCanLogInWithValidCredentials"/>
           <include name="teardown"/>
+          <include name="verifyThatAdminCannotLogInWithInvalidCredentials"/>
+          <include name="verifyThatAdminCannotLogInWithOnlyUsernameFilled"/>
         </methods>
       </class> <!-- com.tmb.tests.OrangeHRMTest -->
     </classes>

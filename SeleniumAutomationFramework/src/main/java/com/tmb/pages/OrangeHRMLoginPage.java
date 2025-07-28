@@ -1,6 +1,8 @@
 package com.tmb.pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.tmb.driver.DriverManager;
 
@@ -9,7 +11,8 @@ public final class OrangeHRMLoginPage extends BasePage{
 	private final By textboxUsername = By.xpath("//input[@name='username']");
 	private final By textboxPassword =By.xpath("//input[@name='password' and @type='password'] ");
 	private final By buttonLogin = By.xpath("//button[text()=' Login ']");
-	
+	private final By errorMessageElement = By.xpath("//p[text()='Invalid credentials']");
+	private final By requiredElement =By.xpath("//span[text()='Required']");
 	public OrangeHRMLoginPage enterUsername(String username) {
 		sendKeys(textboxUsername, username, "Username");
 		return this;
@@ -24,7 +27,23 @@ public final class OrangeHRMLoginPage extends BasePage{
 		click(buttonLogin,"login button");
 		return new OrangeHRMHomePage();
 	}
+	public OrangeHRMLoginPage clickLogin1() {
+		click(buttonLogin,"login button");
+		return this;
+	}
 	public String getTitle() {
 		return getPageTitle();
+	}
+	public String errorMessageText() {
+		new WebDriverWait(DriverManager.getDriver(), 15000)
+		.until(ExpectedConditions.visibilityOfElementLocated(errorMessageElement));
+		String errorMessage=DriverManager.getDriver().findElement(errorMessageElement).getText();
+		System.out.println(errorMessage);
+		
+		return errorMessage;
+	}
+	public String requiredText() {
+		String requiredTestString = DriverManager.getDriver().findElement(requiredElement).getText();
+		return requiredTestString;
 	}
 }
