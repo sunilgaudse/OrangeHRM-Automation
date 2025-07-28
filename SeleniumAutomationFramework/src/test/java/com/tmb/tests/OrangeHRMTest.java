@@ -25,6 +25,7 @@ public class OrangeHRMTest extends BaseTests{
 		.isEqualTo("OrangeHRM");
 	}
 	
+
 	@Test
 	public void verifyThatAdminCannotLogInWithInvalidCredentials(Map<String, String>data) {
 		String title = new OrangeHRMLoginPage()
@@ -40,6 +41,4 @@ public class OrangeHRMTest extends BaseTests{
 		Assertions.assertThat(passwordRequiredString)
 		.isEqualTo("Required");
 	}
-
-
 }
