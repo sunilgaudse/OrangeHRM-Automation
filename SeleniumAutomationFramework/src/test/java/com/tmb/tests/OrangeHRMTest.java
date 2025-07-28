@@ -36,9 +36,16 @@ public class OrangeHRMTest extends BaseTests{
 	}
 	@Test
 	public void verifyThatAdminCannotLogInWithOnlyUsernameFilled(Map<String, String>data) {
-		String passwordRequiredString =new OrangeHRMLoginPage()
+		String requiredString =new OrangeHRMLoginPage()
 				.enterUsername(data.get("username")).clickLogin1().requiredText();
-		Assertions.assertThat(passwordRequiredString)
+		Assertions.assertThat(requiredString)
+		.isEqualTo("Required");
+	}
+	@Test
+	public void verifyThatAdminCannotLogInWithOnlyPasswordFilled(Map<String, String>data) {
+		String requiredString =new OrangeHRMLoginPage()
+				.enterUsername(data.get("password")).clickLogin1().requiredText();
+		Assertions.assertThat(requiredString)
 		.isEqualTo("Required");
 	}
 }
