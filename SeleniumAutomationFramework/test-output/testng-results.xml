@@ -12,6 +12,19 @@
             <param index="0">
               <value>
                 <![CDATA[[Ljava.lang.Object;@1d1cbd0f]]>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-28T10:47:12 IST" name="Suite" finished-at="2025-07-28T10:47:49 IST" duration-ms="36355">
+    <groups>
+    </groups>
+    <test started-at="2025-07-28T10:47:12 IST" name="Test" finished-at="2025-07-28T10:47:49 IST" duration-ms="36355">
+      <class name="com.tmb.tests.OrangeHRMTest">
+        <test-method is-config="true" signature="setup([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.OrangeHRMTest@173ed316]" started-at="2025-07-28T10:47:14 IST" name="setup" finished-at="2025-07-28T10:47:24 IST" duration-ms="10898" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@4364712f]]>
               </value>
             </param>
           </params>
@@ -23,6 +36,11 @@
             <param index="0">
               <value>
                 <![CDATA[[Ljava.lang.Object;@6fa13e6]]>
+        <test-method is-config="true" signature="setup([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.OrangeHRMTest@173ed316]" started-at="2025-07-28T10:47:14 IST" name="setup" finished-at="2025-07-28T10:47:35 IST" duration-ms="21915" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@1b7a52dd]]>
               </value>
             </param>
           </params>
@@ -34,6 +52,11 @@
             <param index="0">
               <value>
                 <![CDATA[[Ljava.lang.Object;@3af7d855]]>
+        <test-method is-config="true" signature="setup([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.OrangeHRMTest@173ed316]" started-at="2025-07-28T10:47:14 IST" name="setup" finished-at="2025-07-28T10:47:23 IST" duration-ms="9774" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@7f93dd4e]]>
               </value>
             </param>
           </params>
@@ -45,6 +68,11 @@
             <param index="0">
               <value>
                 <![CDATA[[Ljava.lang.Object;@77049094]]>
+        <test-method is-config="true" signature="setup([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.OrangeHRMTest@173ed316]" started-at="2025-07-28T10:47:14 IST" name="setup" finished-at="2025-07-28T10:47:25 IST" duration-ms="11007" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@5ad5be4a]]>
               </value>
             </param>
           </params>
@@ -56,6 +84,11 @@
             <param index="0">
               <value>
                 <![CDATA[[Ljava.lang.Object;@f88bfbe]]>
+        <test-method is-config="true" signature="setup([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.OrangeHRMTest@173ed316]" started-at="2025-07-28T10:47:14 IST" name="setup" finished-at="2025-07-28T10:47:38 IST" duration-ms="24918" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@3ad85136]]>
               </value>
             </param>
           </params>
@@ -67,6 +100,11 @@
             <param index="0">
               <value>
                 <![CDATA[[Ljava.lang.Object;@59bbe88a]]>
+        <test-method is-config="true" signature="setup([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.OrangeHRMTest@173ed316]" started-at="2025-07-28T10:47:14 IST" name="setup" finished-at="2025-07-28T10:47:42 IST" duration-ms="28223" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@737d100a]]>
               </value>
             </param>
           </params>
@@ -118,6 +156,7 @@
           </reporter-output>
         </test-method> <!-- verifyThatAdminCannotLogInWithInvalidCredentials -->
         <test-method signature="verifyThatAdminCannotLogInWithOnlyUsernameFilled(java.util.Map)[pri:0, instance:com.tmb.tests.OrangeHRMTest@25ce9dc4]" started-at="2025-07-28T12:40:56 IST" name="verifyThatAdminCannotLogInWithOnlyUsernameFilled" data-provider="getData" finished-at="2025-07-28T12:41:03 IST" duration-ms="7020" status="PASS">
+        <test-method signature="verifyThatAdminCannotLogInWithOnlyUsernameFilled(java.util.Map)[pri:0, instance:com.tmb.tests.OrangeHRMTest@173ed316]" started-at="2025-07-28T10:47:23 IST" name="verifyThatAdminCannotLogInWithOnlyUsernameFilled" data-provider="getData" finished-at="2025-07-28T10:47:26 IST" duration-ms="2537" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -129,6 +168,7 @@
           </reporter-output>
         </test-method> <!-- verifyThatAdminCannotLogInWithOnlyUsernameFilled -->
         <test-method signature="verifyThatAdminCanLogInWithValidCredentials(java.util.Map)[pri:0, instance:com.tmb.tests.OrangeHRMTest@25ce9dc4]" started-at="2025-07-28T12:40:56 IST" name="verifyThatAdminCanLogInWithValidCredentials" data-provider="getData" finished-at="2025-07-28T12:41:04 IST" duration-ms="7311" status="PASS">
+        <test-method signature="verifyThatAdminCanLogInWithValidCredentials(java.util.Map)[pri:0, instance:com.tmb.tests.OrangeHRMTest@173ed316]" started-at="2025-07-28T10:47:24 IST" name="verifyThatAdminCanLogInWithValidCredentials" data-provider="getData" finished-at="2025-07-28T10:47:32 IST" duration-ms="7872" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -171,6 +211,11 @@
             <param index="0">
               <value>
                 <![CDATA[{fname=sunil, password=pass, browser=firefox, testname=verifyThatAdminCannotLogInWithInvalidCredentials, execute=yes, username=Admin12}]]>
+        <test-method signature="verifyThatAdminCannotLogInWithInvalidCredentials(java.util.Map)[pri:0, instance:com.tmb.tests.OrangeHRMTest@173ed316]" started-at="2025-07-28T10:47:25 IST" name="verifyThatAdminCannotLogInWithInvalidCredentials" data-provider="getData" finished-at="2025-07-28T10:47:29 IST" duration-ms="4554" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{fname=sunil, password=pass, browser=chrome, testname=verifyThatAdminCannotLogInWithInvalidCredentials, execute=yes, username=Admin12}]]>
               </value>
             </param>
           </params>
@@ -178,6 +223,19 @@
           </reporter-output>
         </test-method> <!-- verifyThatAdminCannotLogInWithInvalidCredentials -->
         <test-method signature="verifyThatAdminCannotLogInWithOnlyUsernameFilled(java.util.Map)[pri:0, instance:com.tmb.tests.OrangeHRMTest@25ce9dc4]" started-at="2025-07-28T12:41:13 IST" name="verifyThatAdminCannotLogInWithOnlyUsernameFilled" data-provider="getData" finished-at="2025-07-28T12:41:13 IST" duration-ms="583" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tmb.tests.OrangeHRMTest@173ed316]" started-at="2025-07-28T10:47:26 IST" name="teardown" finished-at="2025-07-28T10:47:28 IST" duration-ms="1983" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tmb.tests.OrangeHRMTest@173ed316]" started-at="2025-07-28T10:47:29 IST" name="teardown" finished-at="2025-07-28T10:47:33 IST" duration-ms="3767" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tmb.tests.OrangeHRMTest@173ed316]" started-at="2025-07-28T10:47:32 IST" name="teardown" finished-at="2025-07-28T10:47:33 IST" duration-ms="1191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="verifyThatAdminCannotLogInWithOnlyUsernameFilled(java.util.Map)[pri:0, instance:com.tmb.tests.OrangeHRMTest@173ed316]" started-at="2025-07-28T10:47:35 IST" name="verifyThatAdminCannotLogInWithOnlyUsernameFilled" data-provider="getData" finished-at="2025-07-28T10:47:37 IST" duration-ms="1862" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -197,6 +255,15 @@
             <param index="0">
               <value>
                 <![CDATA[{fname=amuthan, password=admin123, browser=firefox, testname=verifyThatAdminCannotLogInWithOnlyPasswordFilled, execute=yes, username=Admin}]]>
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tmb.tests.OrangeHRMTest@173ed316]" started-at="2025-07-28T10:47:37 IST" name="teardown" finished-at="2025-07-28T10:47:39 IST" duration-ms="1503" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="verifyThatAdminCannotLogInWithInvalidCredentials(java.util.Map)[pri:0, instance:com.tmb.tests.OrangeHRMTest@173ed316]" started-at="2025-07-28T10:47:38 IST" name="verifyThatAdminCannotLogInWithInvalidCredentials" data-provider="getData" finished-at="2025-07-28T10:47:43 IST" duration-ms="4199" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{fname=sunil, password=pass, browser=firefox, testname=verifyThatAdminCannotLogInWithInvalidCredentials, execute=yes, username=Admin12}]]>
               </value>
             </param>
           </params>
@@ -212,6 +279,23 @@
           </reporter-output>
         </test-method> <!-- teardown -->
         <test-method is-config="true" signature="teardown()[pri:0, instance:com.tmb.tests.OrangeHRMTest@25ce9dc4]" started-at="2025-07-28T12:41:16 IST" name="teardown" finished-at="2025-07-28T12:41:18 IST" duration-ms="2678" status="PASS">
+        </test-method> <!-- verifyThatAdminCannotLogInWithInvalidCredentials -->
+        <test-method signature="verifyThatAdminCanLogInWithValidCredentials(java.util.Map)[pri:0, instance:com.tmb.tests.OrangeHRMTest@173ed316]" started-at="2025-07-28T10:47:42 IST" name="verifyThatAdminCanLogInWithValidCredentials" data-provider="getData" finished-at="2025-07-28T10:47:47 IST" duration-ms="5430" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{fname=amuthan, password=admin123, browser=firefox, testname=verifyThatAdminCanLogInWithValidCredentials, execute=yes, username=Admin}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyThatAdminCanLogInWithValidCredentials -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tmb.tests.OrangeHRMTest@173ed316]" started-at="2025-07-28T10:47:43 IST" name="teardown" finished-at="2025-07-28T10:47:44 IST" duration-ms="1169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tmb.tests.OrangeHRMTest@173ed316]" started-at="2025-07-28T10:47:47 IST" name="teardown" finished-at="2025-07-28T10:47:49 IST" duration-ms="1652" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
