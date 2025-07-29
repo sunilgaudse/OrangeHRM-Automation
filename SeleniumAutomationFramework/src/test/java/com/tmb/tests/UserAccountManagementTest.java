@@ -6,12 +6,13 @@ import org.assertj.core.api.Assertions;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import com.tmb.annotations.Sheet;
 import com.tmb.listeners.MethodInterceptor;
 import com.tmb.pages.OrangeHRMLoginPage;
 import com.tmb.reports.ExtentLogger;
 
 @Listeners(MethodInterceptor.class)
-
+@Sheet("USERACCOUNTMANAGEMENTDATA")
 public class UserAccountManagementTest extends BaseTests{
 	private UserAccountManagementTest() {
 		
