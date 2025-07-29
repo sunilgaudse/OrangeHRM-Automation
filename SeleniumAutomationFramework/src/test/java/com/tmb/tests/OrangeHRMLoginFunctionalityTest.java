@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 
 import com.tmb.listeners.MethodInterceptor;
 import com.tmb.pages.OrangeHRMLoginPage;
+import com.tmb.reports.ExtentLogger;
 
 @Listeners(MethodInterceptor.class)
 public class OrangeHRMLoginFunctionalityTest extends BaseTests{
@@ -17,6 +18,12 @@ public class OrangeHRMLoginFunctionalityTest extends BaseTests{
 	
 	@Test
 	public void verifyThatAdminCanLogInWithValidCredentials(Map<String, String>data) {
+		try {
+			ExtentLogger.pass("Test is running in "+ data.get("browser") +" browser." , true);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		String title = new OrangeHRMLoginPage()
 				.enterUsername(data.get("username")).enterPassword(data.get("password")).clickLogin()
 				.clickWelcome().clickLogout()
@@ -28,6 +35,12 @@ public class OrangeHRMLoginFunctionalityTest extends BaseTests{
 
 	@Test
 	public void verifyThatAdminCannotLogInWithInvalidCredentials(Map<String, String>data) {
+		try {
+			ExtentLogger.pass("Test is running in "+ data.get("browser") +" browser." , true);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		String title = new OrangeHRMLoginPage()
 				.enterUsername(data.get("username")).enterPassword(data.get("password")).clickLogin1()
 				.errorMessageText();
@@ -36,6 +49,12 @@ public class OrangeHRMLoginFunctionalityTest extends BaseTests{
 	}
 	@Test
 	public void verifyThatAdminCannotLogInWithOnlyUsernameFilled(Map<String, String>data) {
+		try {
+			ExtentLogger.pass("Test is running in "+ data.get("browser") +" browser." , true);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		String requiredString =new OrangeHRMLoginPage()
 				.enterUsername(data.get("username")).clickLogin1().requiredText();
 		Assertions.assertThat(requiredString)
@@ -43,6 +62,12 @@ public class OrangeHRMLoginFunctionalityTest extends BaseTests{
 	}
 	@Test
 	public void verifyThatAdminCannotLogInWithOnlyPasswordFilled(Map<String, String>data) {
+		try {
+			ExtentLogger.pass("Test is running in "+ data.get("browser") +" browser." , true);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		String requiredString =new OrangeHRMLoginPage()
 				.enterUsername(data.get("password")).clickLogin1().requiredText();
 		Assertions.assertThat(requiredString)
