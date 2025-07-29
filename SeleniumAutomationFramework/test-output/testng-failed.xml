@@ -13,6 +13,7 @@
           <include name="setup"/>
           <include name="teardown"/>
           <include name="verifyThatUserCanChangePasswordWithValidCredentials" invocation-numbers="1"/>
+          <include name="verifyThatUserCanChangePasswordWithValidCredentials" invocation-numbers="0 1"/>
         </methods>
       </class> <!-- com.tmb.tests.UserAccountManagementTest -->
     </classes>
