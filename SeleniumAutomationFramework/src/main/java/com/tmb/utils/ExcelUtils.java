@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -17,6 +18,17 @@ public final class ExcelUtils {
 	private ExcelUtils() {
 
 	}
+	 // ✅ Add this static cache
+    private static final Map<String, List<Map<String, String>>> sheetCache = new ConcurrentHashMap<>();
+
+    // ✅ New public method to get cached sheet data
+    public static List<Map<String, String>> getCachedSheetData(String sheetName) {
+        return sheetCache.computeIfAbsent(sheetName, key -> {
+            List<Map<String, String>> data = getTestDetails(key);
+            return data == null ? new ArrayList<>() : data;
+        });
+    }
+// Above this method is used to cache the excel single time , no need to read it for every test case .It makes execution faster.
 
 	public static List<Map<String, String>> getTestDetails(String sheetName) {
 		
@@ -25,6 +37,9 @@ public final class ExcelUtils {
 			
 			XSSFWorkbook workbook = new XSSFWorkbook(fs);
 			XSSFSheet sheet = workbook.getSheet(sheetName);
+			if (sheet == null) {
+	            throw new RuntimeException("Sheet '" + sheetName + "' not found in Excel file.");
+	        }
 			Map<String, String> map = null;
 			list = new ArrayList();
 			int lastRowNum = sheet.getLastRowNum();
