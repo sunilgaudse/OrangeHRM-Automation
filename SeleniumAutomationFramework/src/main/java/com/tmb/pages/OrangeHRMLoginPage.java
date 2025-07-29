@@ -10,7 +10,7 @@ public final class OrangeHRMLoginPage extends BasePage{
 	
 	private final By textboxUsername = By.xpath("//input[@name='username']");
 	private final By textboxPassword =By.xpath("//input[@name='password' and @type='password'] ");
-	private final By buttonLogin = By.xpath("//button[text()=' Login ']");
+	private final By buttonLogin = By.xpath("//button[@type='submit']");
 	private final By errorMessageElement = By.xpath("//p[text()='Invalid credentials']");
 	private final By requiredElement =By.xpath("//span[text()='Required']");
 	public OrangeHRMLoginPage enterUsername(String username) {
@@ -37,13 +37,9 @@ public final class OrangeHRMLoginPage extends BasePage{
 	public String errorMessageText() {
 		new WebDriverWait(DriverManager.getDriver(), 15000)
 		.until(ExpectedConditions.visibilityOfElementLocated(errorMessageElement));
-		String errorMessage=DriverManager.getDriver().findElement(errorMessageElement).getText();
-		System.out.println(errorMessage);
-		
-		return errorMessage;
+		return DriverManager.getDriver().findElement(errorMessageElement).getText();
 	}
 	public String requiredText() {
-		String requiredTestString = DriverManager.getDriver().findElement(requiredElement).getText();
-		return requiredTestString;
+		return DriverManager.getDriver().findElement(requiredElement).getText();
 	}
 }
