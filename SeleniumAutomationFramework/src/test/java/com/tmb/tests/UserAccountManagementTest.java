@@ -60,4 +60,5 @@ public class UserAccountManagementTest extends BaseTests{
 		Assertions.assertThat(passwordMissmatchString)
 		.contains("Passwords do not match");
 	}
+
 }
