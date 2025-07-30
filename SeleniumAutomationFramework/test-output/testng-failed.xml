@@ -8,25 +8,11 @@
   </listeners>
   <test thread-count="5" parallel="methods" name="Test(failed)">
     <classes>
-      <class name="com.tmb.tests.OrangeHRMLoginFunctionalityTest">
-        <methods>
-          <include name="setup"/>
-          <include name="verifyThatAdminCannotLogInWithOnlyPasswordFilled"/>
-          <include name="teardown"/>
-          <include name="verifyThatAdminCanLogInWithValidCredentials"/>
-          <include name="verifyThatAdminCannotLogInWithInvalidCredentials"/>
-        </methods>
-      </class> <!-- com.tmb.tests.OrangeHRMLoginFunctionalityTest -->
       <class name="com.tmb.tests.UserAccountManagementTest">
         <methods>
           <include name="setup"/>
           <include name="teardown"/>
-<<<<<<< HEAD
-          <include name="verifyThatUserCanChangePasswordWithValidCredentials"/>
-=======
-          <include name="verifyThatUserCanChangePasswordWithValidCredentials" invocation-numbers="1"/>
-          <include name="verifyThatUserCanChangePasswordWithValidCredentials" invocation-numbers="0 1"/>
->>>>>>> 33f69f104f542d47b142d18cacddc65a7f79bcb1
+          <include name="verifyThatUserCannotChangePasswordWhenThePasswoedDoesNotMeetSpecifiedCriteria" invocation-numbers="0 1"/>
         </methods>
       </class> <!-- com.tmb.tests.UserAccountManagementTest -->
     </classes>
