@@ -21,7 +21,15 @@
         <methods>
           <include name="setup"/>
           <include name="teardown"/>
+<<<<<<< HEAD
           <include name="verifyThatUserCanChangePasswordWithValidCredentials"/>
+=======
+<<<<<<< HEAD
+          <include name="verifyThatUserCanChangePasswordWithValidCredentials" invocation-numbers="1"/>
+=======
+          <include name="verifyThatUserCanChangePasswordWithValidCredentials" invocation-numbers="0 1"/>
+>>>>>>> 4b19ff02b67fb0c7c3d30ff99b829b9047373781
+>>>>>>> 33f69f104f542d47b142d18cacddc65a7f79bcb1
         </methods>
       </class> <!-- com.tmb.tests.UserAccountManagementTest -->
     </classes>

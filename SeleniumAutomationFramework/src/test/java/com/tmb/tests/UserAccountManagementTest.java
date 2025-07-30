@@ -23,6 +23,7 @@ public class UserAccountManagementTest extends BaseTests{
 		try {
 			ExtentLogger.pass("Test is running in "+ data.get("browser") +" browser." , true);
 		} catch (Exception e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		String toastMessgae =new OrangeHRMLoginPage().enterUsername(data.get("username")).enterPassword(data.get("password")).clickLogin().clickWelcome().clickChangePassword()

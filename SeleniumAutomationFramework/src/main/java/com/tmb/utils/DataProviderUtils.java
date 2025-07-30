@@ -4,7 +4,7 @@ import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-
+import com.tmb.annotations.*;
 import org.testng.annotations.DataProvider;
 
 import com.tmb.annotations.Sheet;
@@ -23,6 +23,8 @@ public final class DataProviderUtils {
 		} else if (m.getDeclaringClass().isAnnotationPresent(Sheet.class)) {
 		    sheetName = m.getDeclaringClass().getAnnotation(Sheet.class).value();
 		    System.out.println("Class-level @Sheet found: " + sheetName);
+		} else if (m.getDeclaringClass().isAnnotationPresent(Sheet.class)) {
+		    sheetName = m.getDeclaringClass().getAnnotation(Sheet.class).value();
 		}
 		else {
 			 System.out.println("No @Sheet found. Using default: " + sheetName);
