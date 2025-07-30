@@ -1,8 +1,5 @@
 package com.tmb.pages;
 
-import java.time.Duration;
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -15,6 +12,7 @@ public final class OrangeHRMUpdatePasswordPage extends BasePage{
 	private final By confirmPassword =By.xpath("//label[text()='Confirm Password']/following::input[1]");
 	private final By saveButton =By.xpath("//button[@type='submit']"); 
 	private final By successToastMessage = By.cssSelector("div.oxd-toast-content.oxd-toast-content--success p");
+	private final By errorToastMessage = By.cssSelector("div.oxd-toast-content.oxd-toast-content--error p");
 	
 	public OrangeHRMUpdatePasswordPage enterCurrentPassword(String password) {
 		sendKeys(currentPassword, password,"Current Password");
@@ -34,5 +32,8 @@ public final class OrangeHRMUpdatePasswordPage extends BasePage{
 	}
 	public String getSuccessToastmessgae() {
 		return new WebDriverWait(DriverManager.getDriver(),10).until(ExpectedConditions.visibilityOfElementLocated(successToastMessage)).getText();
+	}
+	public String getErrorToastMessage() {
+		return new WebDriverWait(DriverManager.getDriver(),10).until(ExpectedConditions.visibilityOfElementLocated(errorToastMessage)).getText();
 	}
 }

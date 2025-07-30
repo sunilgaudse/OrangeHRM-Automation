@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite data-provider-thread-count="5" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<suite data-provider-thread-count="6" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="com.tmb.listeners.ListenerClass"/>
     <listener class-name="com.tmb.listeners.MethodInterceptor"/>
@@ -8,12 +8,25 @@
   </listeners>
   <test thread-count="5" parallel="methods" name="Test(failed)">
     <classes>
+      <class name="com.tmb.tests.OrangeHRMLoginFunctionalityTest">
+        <methods>
+          <include name="setup"/>
+          <include name="verifyThatAdminCannotLogInWithOnlyPasswordFilled"/>
+          <include name="teardown"/>
+          <include name="verifyThatAdminCanLogInWithValidCredentials"/>
+          <include name="verifyThatAdminCannotLogInWithInvalidCredentials"/>
+        </methods>
+      </class> <!-- com.tmb.tests.OrangeHRMLoginFunctionalityTest -->
       <class name="com.tmb.tests.UserAccountManagementTest">
         <methods>
           <include name="setup"/>
           <include name="teardown"/>
+<<<<<<< HEAD
+          <include name="verifyThatUserCanChangePasswordWithValidCredentials"/>
+=======
           <include name="verifyThatUserCanChangePasswordWithValidCredentials" invocation-numbers="1"/>
           <include name="verifyThatUserCanChangePasswordWithValidCredentials" invocation-numbers="0 1"/>
+>>>>>>> 33f69f104f542d47b142d18cacddc65a7f79bcb1
         </methods>
       </class> <!-- com.tmb.tests.UserAccountManagementTest -->
     </classes>
