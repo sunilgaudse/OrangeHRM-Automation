@@ -40,4 +40,5 @@ public final class OrangeHRMUpdatePasswordPage extends BasePage{
 	public String getpassMissmatchText() {
 		return new WebDriverWait(DriverManager.getDriver(), 10).until(ExpectedConditions.visibilityOfElementLocated(passowrdMismatchMessage)).getText();
 	}
+	
 }
