@@ -47,5 +47,18 @@ public class UserAccountManagementTest extends BaseTests{
 		.contains("Error");
 	}
 	
+	@Test
+	public void verifyThatUserCannotChangePasswordWhenTheNewPasswordsDoNotMatch(Map<String, String>data) {
+		try {
+			ExtentLogger.pass("Test is running in "+ data.get("browser") +" browser." , true);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		String passwordMissmatchString = new OrangeHRMLoginPage().enterUsername(data.get("username")).enterPassword(data.get("password")).clickLogin()
+				.clickWelcome().clickChangePassword().enterCurrentPassword(data.get("currentpassword")).enterNewPassword(data.get("newpassword")).enterConfirmPassword(data.get("confirmpassword"))
+				.getpassMissmatchText();
+		Assertions.assertThat(passwordMissmatchString)
+		.contains("Passwords do not match");
+	}
 
 }
