@@ -13,6 +13,7 @@ public final class OrangeHRMUpdatePasswordPage extends BasePage{
 	private final By saveButton =By.xpath("//button[@type='submit']"); 
 	private final By successToastMessage = By.cssSelector("div.oxd-toast-content.oxd-toast-content--success p");
 	private final By errorToastMessage = By.cssSelector("div.oxd-toast-content.oxd-toast-content--error p");
+	private final By passowrdMismatchMessage = By.xpath("//span[text()='Passwords do not match']");
 	
 	public OrangeHRMUpdatePasswordPage enterCurrentPassword(String password) {
 		sendKeys(currentPassword, password,"Current Password");
@@ -35,5 +36,8 @@ public final class OrangeHRMUpdatePasswordPage extends BasePage{
 	}
 	public String getErrorToastMessage() {
 		return new WebDriverWait(DriverManager.getDriver(),10).until(ExpectedConditions.visibilityOfElementLocated(errorToastMessage)).getText();
+	}
+	public String getpassMissmatchText() {
+		return new WebDriverWait(DriverManager.getDriver(), 10).until(ExpectedConditions.visibilityOfElementLocated(passowrdMismatchMessage)).getText();
 	}
 }
