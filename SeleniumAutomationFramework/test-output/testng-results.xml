@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="16" passed="16" failed="0" skipped="0">
+<testng-results ignored="0" total="18" passed="18" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-30T16:53:34 IST" name="Suite" finished-at="2025-07-30T16:54:46 IST" duration-ms="72459">
+  <suite started-at="2025-07-31T20:18:25 IST" name="Suite" finished-at="2025-07-31T20:19:29 IST" duration-ms="64144">
     <groups>
     </groups>
-    <test started-at="2025-07-30T16:53:34 IST" name="Test" finished-at="2025-07-30T16:54:46 IST" duration-ms="72459">
+    <test started-at="2025-07-31T20:18:25 IST" name="Test" finished-at="2025-07-31T20:19:29 IST" duration-ms="64144">
       <class name="com.tmb.tests.UserAccountManagementTest">
-        <test-method is-config="true" signature="setup([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.UserAccountManagementTest@33bc72d1]" started-at="2025-07-30T16:53:35 IST" name="setup" finished-at="2025-07-30T16:54:09 IST" duration-ms="33478" status="PASS">
+        <test-method is-config="true" signature="setup([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.UserAccountManagementTest@1a75e76a]" started-at="2025-07-31T20:18:25 IST" name="setup" finished-at="2025-07-31T20:18:52 IST" duration-ms="26968" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,250 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setup([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.UserAccountManagementTest@33bc72d1]" started-at="2025-07-30T16:53:35 IST" name="setup" finished-at="2025-07-30T16:53:48 IST" duration-ms="12515" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@366d8b97]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyThatUserCanChangePasswordWithValidCredentials(java.util.Map)[pri:0, instance:com.tmb.tests.UserAccountManagementTest@33bc72d1]" started-at="2025-07-30T16:53:48 IST" name="verifyThatUserCanChangePasswordWithValidCredentials" data-provider="getData" finished-at="2025-07-30T16:54:00 IST" duration-ms="12385" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{fname=amuthan, password=admin123, currentpassword=admin123, browser=chrome, testname=verifyThatUserCanChangePasswordWithValidCredentials, newpassword=admin111, confirmpassword=admin111, execute=yes, username=Admin}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyThatUserCanChangePasswordWithValidCredentials -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tmb.tests.UserAccountManagementTest@33bc72d1]" started-at="2025-07-30T16:54:00 IST" name="teardown" finished-at="2025-07-30T16:54:02 IST" duration-ms="1530" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method signature="verifyThatUserCanChangePasswordWithValidCredentials(java.util.Map)[pri:0, instance:com.tmb.tests.UserAccountManagementTest@33bc72d1]" started-at="2025-07-30T16:54:09 IST" name="verifyThatUserCanChangePasswordWithValidCredentials" data-provider="getData" finished-at="2025-07-30T16:54:23 IST" duration-ms="13877" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{fname=amuthan, password=admin123, currentpassword=admin123, browser=firefox, testname=verifyThatUserCanChangePasswordWithValidCredentials, newpassword=admin111, confirmpassword=admin111, execute=yes, username=Admin}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyThatUserCanChangePasswordWithValidCredentials -->
-        <test-method is-config="true" signature="setup([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.UserAccountManagementTest@33bc72d1]" started-at="2025-07-30T16:54:09 IST" name="setup" finished-at="2025-07-30T16:54:15 IST" duration-ms="6165" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@7654f833]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setup([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.UserAccountManagementTest@33bc72d1]" started-at="2025-07-30T16:54:09 IST" name="setup" finished-at="2025-07-30T16:54:33 IST" duration-ms="24455" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@571a01f9]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setup([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.UserAccountManagementTest@33bc72d1]" started-at="2025-07-30T16:54:11 IST" name="setup" finished-at="2025-07-30T16:54:18 IST" duration-ms="6655" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@d7109be]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setup([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.UserAccountManagementTest@33bc72d1]" started-at="2025-07-30T16:54:11 IST" name="setup" finished-at="2025-07-30T16:54:30 IST" duration-ms="18335" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@5e0ec41f]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setup([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.UserAccountManagementTest@33bc72d1]" started-at="2025-07-30T16:54:13 IST" name="setup" finished-at="2025-07-30T16:54:20 IST" duration-ms="6831" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@f4a3a8d]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setup([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.UserAccountManagementTest@33bc72d1]" started-at="2025-07-30T16:54:13 IST" name="setup" finished-at="2025-07-30T16:54:36 IST" duration-ms="22727" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@8d8f754]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyThatUserCannotChangePasswordWhenTheNewPasswordsDoNotMatch(java.util.Map)[pri:0, instance:com.tmb.tests.UserAccountManagementTest@33bc72d1]" started-at="2025-07-30T16:54:15 IST" name="verifyThatUserCannotChangePasswordWhenTheNewPasswordsDoNotMatch" data-provider="getData" finished-at="2025-07-30T16:54:24 IST" duration-ms="9250" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{fname=Sunil, password=admin123, currentpassword=admin123, browser=chrome, testname=verifyThatUserCannotChangePasswordWhenTheNewPasswordsDoNotMatch, newpassword=admin111, confirmpassword=admin132, execute=yes, username=Admin}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyThatUserCannotChangePasswordWhenTheNewPasswordsDoNotMatch -->
-        <test-method signature="verifyThatUserCannotChangePasswordWhenThePasswoedDoesNotMeetSpecifiedCriteria(java.util.Map)[pri:0, instance:com.tmb.tests.UserAccountManagementTest@33bc72d1]" started-at="2025-07-30T16:54:18 IST" name="verifyThatUserCannotChangePasswordWhenThePasswoedDoesNotMeetSpecifiedCriteria" data-provider="getData" finished-at="2025-07-30T16:54:29 IST" duration-ms="11119" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{fname=Sunil, password=admin123, currentpassword=admin123, browser=chrome, testname=verifyThatUserCannotChangePasswordWhenThePasswoedDoesNotMeetSpecifiedCriteria, newpassword=admin1, confirmpassword=admin132, execute=yes, username=Admin}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyThatUserCannotChangePasswordWhenThePasswoedDoesNotMeetSpecifiedCriteria -->
-        <test-method signature="verifyThatUserCannotChangePasswordWithInvalidCurrentPassword(java.util.Map)[pri:0, instance:com.tmb.tests.UserAccountManagementTest@33bc72d1]" started-at="2025-07-30T16:54:20 IST" name="verifyThatUserCannotChangePasswordWithInvalidCurrentPassword" data-provider="getData" finished-at="2025-07-30T16:54:32 IST" duration-ms="12130" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{fname=Sunil, password=admin123, currentpassword=admin112, browser=chrome, testname=verifyThatUserCannotChangePasswordWithInvalidCurrentPassword, newpassword=admin111, confirmpassword=admin111, execute=yes, username=Admin}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyThatUserCannotChangePasswordWithInvalidCurrentPassword -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tmb.tests.UserAccountManagementTest@33bc72d1]" started-at="2025-07-30T16:54:23 IST" name="teardown" finished-at="2025-07-30T16:54:30 IST" duration-ms="7260" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tmb.tests.UserAccountManagementTest@33bc72d1]" started-at="2025-07-30T16:54:24 IST" name="teardown" finished-at="2025-07-30T16:54:30 IST" duration-ms="5696" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tmb.tests.UserAccountManagementTest@33bc72d1]" started-at="2025-07-30T16:54:29 IST" name="teardown" finished-at="2025-07-30T16:54:30 IST" duration-ms="1057" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method signature="verifyThatUserCannotChangePasswordWhenThePasswoedDoesNotMeetSpecifiedCriteria(java.util.Map)[pri:0, instance:com.tmb.tests.UserAccountManagementTest@33bc72d1]" started-at="2025-07-30T16:54:30 IST" name="verifyThatUserCannotChangePasswordWhenThePasswoedDoesNotMeetSpecifiedCriteria" data-provider="getData" finished-at="2025-07-30T16:54:37 IST" duration-ms="7360" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{fname=Sunil, password=admin123, currentpassword=admin123, browser=firefox, testname=verifyThatUserCannotChangePasswordWhenThePasswoedDoesNotMeetSpecifiedCriteria, newpassword=admin1, confirmpassword=admin132, execute=yes, username=Admin}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyThatUserCannotChangePasswordWhenThePasswoedDoesNotMeetSpecifiedCriteria -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tmb.tests.UserAccountManagementTest@33bc72d1]" started-at="2025-07-30T16:54:32 IST" name="teardown" finished-at="2025-07-30T16:54:32 IST" duration-ms="406" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method signature="verifyThatUserCannotChangePasswordWhenTheNewPasswordsDoNotMatch(java.util.Map)[pri:0, instance:com.tmb.tests.UserAccountManagementTest@33bc72d1]" started-at="2025-07-30T16:54:33 IST" name="verifyThatUserCannotChangePasswordWhenTheNewPasswordsDoNotMatch" data-provider="getData" finished-at="2025-07-30T16:54:40 IST" duration-ms="6624" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{fname=Sunil, password=admin123, currentpassword=admin123, browser=firefox, testname=verifyThatUserCannotChangePasswordWhenTheNewPasswordsDoNotMatch, newpassword=admin111, confirmpassword=admin132, execute=yes, username=Admin}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyThatUserCannotChangePasswordWhenTheNewPasswordsDoNotMatch -->
-        <test-method signature="verifyThatUserCannotChangePasswordWithInvalidCurrentPassword(java.util.Map)[pri:0, instance:com.tmb.tests.UserAccountManagementTest@33bc72d1]" started-at="2025-07-30T16:54:36 IST" name="verifyThatUserCannotChangePasswordWithInvalidCurrentPassword" data-provider="getData" finished-at="2025-07-30T16:54:44 IST" duration-ms="8535" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{fname=Sunil, password=admin123, currentpassword=admin112, browser=firefox, testname=verifyThatUserCannotChangePasswordWithInvalidCurrentPassword, newpassword=admin111, confirmpassword=admin111, execute=yes, username=Admin}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyThatUserCannotChangePasswordWithInvalidCurrentPassword -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tmb.tests.UserAccountManagementTest@33bc72d1]" started-at="2025-07-30T16:54:37 IST" name="teardown" finished-at="2025-07-30T16:54:39 IST" duration-ms="1660" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tmb.tests.UserAccountManagementTest@33bc72d1]" started-at="2025-07-30T16:54:40 IST" name="teardown" finished-at="2025-07-30T16:54:43 IST" duration-ms="2743" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tmb.tests.UserAccountManagementTest@33bc72d1]" started-at="2025-07-30T16:54:44 IST" name="teardown" finished-at="2025-07-30T16:54:46 IST" duration-ms="1728" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.tmb.tests.UserAccountManagementTest -->
-      <class name="com.tmb.tests.OrangeHRMLoginFunctionalityTest">
-        <test-method is-config="true" signature="setup([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.OrangeHRMLoginFunctionalityTest@3e8c3cb]" started-at="2025-07-30T16:53:35 IST" name="setup" finished-at="2025-07-30T16:54:02 IST" duration-ms="26739" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@329bad59]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setup([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.OrangeHRMLoginFunctionalityTest@3e8c3cb]" started-at="2025-07-30T16:53:35 IST" name="setup" finished-at="2025-07-30T16:53:46 IST" duration-ms="11174" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@862f408]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setup([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.OrangeHRMLoginFunctionalityTest@3e8c3cb]" started-at="2025-07-30T16:53:35 IST" name="setup" finished-at="2025-07-30T16:54:05 IST" duration-ms="29371" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@33ecbd6c]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setup([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.OrangeHRMLoginFunctionalityTest@3e8c3cb]" started-at="2025-07-30T16:53:35 IST" name="setup" finished-at="2025-07-30T16:53:46 IST" duration-ms="10368" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@5c723f2d]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setup([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.OrangeHRMLoginFunctionalityTest@3e8c3cb]" started-at="2025-07-30T16:53:35 IST" name="setup" finished-at="2025-07-30T16:54:07 IST" duration-ms="31642" status="PASS">
+        <test-method is-config="true" signature="setup([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.UserAccountManagementTest@1a75e76a]" started-at="2025-07-31T20:18:25 IST" name="setup" finished-at="2025-07-31T20:18:33 IST" duration-ms="7186" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -272,7 +29,269 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setup([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.OrangeHRMLoginFunctionalityTest@3e8c3cb]" started-at="2025-07-30T16:53:35 IST" name="setup" finished-at="2025-07-30T16:53:48 IST" duration-ms="12334" status="PASS">
+        <test-method signature="verifyThatUserCanChangePasswordWithValidCredentials(java.util.Map)[pri:0, instance:com.tmb.tests.UserAccountManagementTest@1a75e76a]" started-at="2025-07-31T20:18:33 IST" name="verifyThatUserCanChangePasswordWithValidCredentials" data-provider="getData" finished-at="2025-07-31T20:18:45 IST" duration-ms="12412" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{fname=amuthan, password=admin123, currentpassword=admin123, browser=chrome, testname=verifyThatUserCanChangePasswordWithValidCredentials, newpassword=admin111, confirmpassword=admin111, execute=yes, username=Admin}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyThatUserCanChangePasswordWithValidCredentials -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tmb.tests.UserAccountManagementTest@1a75e76a]" started-at="2025-07-31T20:18:45 IST" name="teardown" finished-at="2025-07-31T20:18:45 IST" duration-ms="291" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.UserAccountManagementTest@1a75e76a]" started-at="2025-07-31T20:18:50 IST" name="setup" finished-at="2025-07-31T20:18:57 IST" duration-ms="6790" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@571a01f9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.UserAccountManagementTest@1a75e76a]" started-at="2025-07-31T20:18:50 IST" name="setup" finished-at="2025-07-31T20:19:08 IST" duration-ms="17366" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@d7109be]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyThatUserCanChangePasswordWithValidCredentials(java.util.Map)[pri:0, instance:com.tmb.tests.UserAccountManagementTest@1a75e76a]" started-at="2025-07-31T20:18:52 IST" name="verifyThatUserCanChangePasswordWithValidCredentials" data-provider="getData" finished-at="2025-07-31T20:19:08 IST" duration-ms="15904" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{fname=amuthan, password=admin123, currentpassword=admin123, browser=firefox, testname=verifyThatUserCanChangePasswordWithValidCredentials, newpassword=admin111, confirmpassword=admin111, execute=yes, username=Admin}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyThatUserCanChangePasswordWithValidCredentials -->
+        <test-method is-config="true" signature="setup([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.UserAccountManagementTest@1a75e76a]" started-at="2025-07-31T20:18:55 IST" name="setup" finished-at="2025-07-31T20:19:01 IST" duration-ms="6612" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@5e0ec41f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.UserAccountManagementTest@1a75e76a]" started-at="2025-07-31T20:18:55 IST" name="setup" finished-at="2025-07-31T20:19:18 IST" duration-ms="23703" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@f4a3a8d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyThatUserCannotChangePasswordWhenAllFieldsAreEmpty(java.util.Map)[pri:0, instance:com.tmb.tests.UserAccountManagementTest@1a75e76a]" started-at="2025-07-31T20:18:57 IST" name="verifyThatUserCannotChangePasswordWhenAllFieldsAreEmpty" data-provider="getData" finished-at="2025-07-31T20:19:06 IST" duration-ms="9166" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{fname=Sunil, password=admin123, currentpassword=, browser=chrome, testname=verifyThatUserCannotChangePasswordWhenAllFieldsAreEmpty, newpassword=, confirmpassword=, execute=yes, username=Admin}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyThatUserCannotChangePasswordWhenAllFieldsAreEmpty -->
+        <test-method signature="verifyThatUserCannotChangePasswordWhenTheNewPasswordsDoNotMatch(java.util.Map)[pri:0, instance:com.tmb.tests.UserAccountManagementTest@1a75e76a]" started-at="2025-07-31T20:19:01 IST" name="verifyThatUserCannotChangePasswordWhenTheNewPasswordsDoNotMatch" data-provider="getData" finished-at="2025-07-31T20:19:11 IST" duration-ms="9663" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{fname=Sunil, password=admin123, currentpassword=admin123, browser=chrome, testname=verifyThatUserCannotChangePasswordWhenTheNewPasswordsDoNotMatch, newpassword=admin111, confirmpassword=admin132, execute=yes, username=Admin}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyThatUserCannotChangePasswordWhenTheNewPasswordsDoNotMatch -->
+        <test-method is-config="true" signature="setup([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.UserAccountManagementTest@1a75e76a]" started-at="2025-07-31T20:19:02 IST" name="setup" finished-at="2025-07-31T20:19:20 IST" duration-ms="17744" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@8d8f754]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.UserAccountManagementTest@1a75e76a]" started-at="2025-07-31T20:19:02 IST" name="setup" finished-at="2025-07-31T20:19:10 IST" duration-ms="7833" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@d613308]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.UserAccountManagementTest@1a75e76a]" started-at="2025-07-31T20:19:02 IST" name="setup" finished-at="2025-07-31T20:19:18 IST" duration-ms="16445" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@25673087]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.UserAccountManagementTest@1a75e76a]" started-at="2025-07-31T20:19:02 IST" name="setup" finished-at="2025-07-31T20:19:20 IST" duration-ms="18001" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@7b27e8f4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tmb.tests.UserAccountManagementTest@1a75e76a]" started-at="2025-07-31T20:19:06 IST" name="teardown" finished-at="2025-07-31T20:19:10 IST" duration-ms="3617" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="verifyThatUserCannotChangePasswordWhenAllFieldsAreEmpty(java.util.Map)[pri:0, instance:com.tmb.tests.UserAccountManagementTest@1a75e76a]" started-at="2025-07-31T20:19:08 IST" name="verifyThatUserCannotChangePasswordWhenAllFieldsAreEmpty" data-provider="getData" finished-at="2025-07-31T20:19:18 IST" duration-ms="10101" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{fname=Sunil, password=admin123, currentpassword=, browser=firefox, testname=verifyThatUserCannotChangePasswordWhenAllFieldsAreEmpty, newpassword=, confirmpassword=, execute=yes, username=Admin}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyThatUserCannotChangePasswordWhenAllFieldsAreEmpty -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tmb.tests.UserAccountManagementTest@1a75e76a]" started-at="2025-07-31T20:19:08 IST" name="teardown" finished-at="2025-07-31T20:19:12 IST" duration-ms="3497" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="verifyThatUserCannotChangePasswordWhenThePasswoedDoesNotMeetSpecifiedCriteria(java.util.Map)[pri:0, instance:com.tmb.tests.UserAccountManagementTest@1a75e76a]" started-at="2025-07-31T20:19:10 IST" name="verifyThatUserCannotChangePasswordWhenThePasswoedDoesNotMeetSpecifiedCriteria" data-provider="getData" finished-at="2025-07-31T20:19:17 IST" duration-ms="7736" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{fname=Sunil, password=admin123, currentpassword=admin123, browser=chrome, testname=verifyThatUserCannotChangePasswordWhenThePasswoedDoesNotMeetSpecifiedCriteria, newpassword=admin1, confirmpassword=admin132, execute=yes, username=Admin}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyThatUserCannotChangePasswordWhenThePasswoedDoesNotMeetSpecifiedCriteria -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tmb.tests.UserAccountManagementTest@1a75e76a]" started-at="2025-07-31T20:19:11 IST" name="teardown" finished-at="2025-07-31T20:19:12 IST" duration-ms="959" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tmb.tests.UserAccountManagementTest@1a75e76a]" started-at="2025-07-31T20:19:17 IST" name="teardown" finished-at="2025-07-31T20:19:18 IST" duration-ms="451" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tmb.tests.UserAccountManagementTest@1a75e76a]" started-at="2025-07-31T20:19:18 IST" name="teardown" finished-at="2025-07-31T20:19:19 IST" duration-ms="1419" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="verifyThatUserCannotChangePasswordWhenTheNewPasswordsDoNotMatch(java.util.Map)[pri:0, instance:com.tmb.tests.UserAccountManagementTest@1a75e76a]" started-at="2025-07-31T20:19:18 IST" name="verifyThatUserCannotChangePasswordWhenTheNewPasswordsDoNotMatch" data-provider="getData" finished-at="2025-07-31T20:19:25 IST" duration-ms="7201" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{fname=Sunil, password=admin123, currentpassword=admin123, browser=firefox, testname=verifyThatUserCannotChangePasswordWhenTheNewPasswordsDoNotMatch, newpassword=admin111, confirmpassword=admin132, execute=yes, username=Admin}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyThatUserCannotChangePasswordWhenTheNewPasswordsDoNotMatch -->
+        <test-method signature="verifyThatUserCannotChangePasswordWithInvalidCurrentPassword(java.util.Map)[pri:0, instance:com.tmb.tests.UserAccountManagementTest@1a75e76a]" started-at="2025-07-31T20:19:18 IST" name="verifyThatUserCannotChangePasswordWithInvalidCurrentPassword" data-provider="getData" finished-at="2025-07-31T20:19:26 IST" duration-ms="7761" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{fname=Sunil, password=admin123, currentpassword=admin112, browser=chrome, testname=verifyThatUserCannotChangePasswordWithInvalidCurrentPassword, newpassword=admin111, confirmpassword=admin111, execute=yes, username=Admin}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyThatUserCannotChangePasswordWithInvalidCurrentPassword -->
+        <test-method signature="verifyThatUserCannotChangePasswordWhenThePasswoedDoesNotMeetSpecifiedCriteria(java.util.Map)[pri:0, instance:com.tmb.tests.UserAccountManagementTest@1a75e76a]" started-at="2025-07-31T20:19:20 IST" name="verifyThatUserCannotChangePasswordWhenThePasswoedDoesNotMeetSpecifiedCriteria" data-provider="getData" finished-at="2025-07-31T20:19:26 IST" duration-ms="6732" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{fname=Sunil, password=admin123, currentpassword=admin123, browser=firefox, testname=verifyThatUserCannotChangePasswordWhenThePasswoedDoesNotMeetSpecifiedCriteria, newpassword=admin1, confirmpassword=admin132, execute=yes, username=Admin}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyThatUserCannotChangePasswordWhenThePasswoedDoesNotMeetSpecifiedCriteria -->
+        <test-method signature="verifyThatUserCannotChangePasswordWithInvalidCurrentPassword(java.util.Map)[pri:0, instance:com.tmb.tests.UserAccountManagementTest@1a75e76a]" started-at="2025-07-31T20:19:20 IST" name="verifyThatUserCannotChangePasswordWithInvalidCurrentPassword" data-provider="getData" finished-at="2025-07-31T20:19:27 IST" duration-ms="7202" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{fname=Sunil, password=admin123, currentpassword=admin112, browser=firefox, testname=verifyThatUserCannotChangePasswordWithInvalidCurrentPassword, newpassword=admin111, confirmpassword=admin111, execute=yes, username=Admin}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyThatUserCannotChangePasswordWithInvalidCurrentPassword -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tmb.tests.UserAccountManagementTest@1a75e76a]" started-at="2025-07-31T20:19:25 IST" name="teardown" finished-at="2025-07-31T20:19:27 IST" duration-ms="1632" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tmb.tests.UserAccountManagementTest@1a75e76a]" started-at="2025-07-31T20:19:26 IST" name="teardown" finished-at="2025-07-31T20:19:27 IST" duration-ms="388" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tmb.tests.UserAccountManagementTest@1a75e76a]" started-at="2025-07-31T20:19:26 IST" name="teardown" finished-at="2025-07-31T20:19:28 IST" duration-ms="1697" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tmb.tests.UserAccountManagementTest@1a75e76a]" started-at="2025-07-31T20:19:27 IST" name="teardown" finished-at="2025-07-31T20:19:29 IST" duration-ms="1440" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.tmb.tests.UserAccountManagementTest -->
+      <class name="com.tmb.tests.OrangeHRMLoginFunctionalityTest">
+        <test-method is-config="true" signature="setup([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.OrangeHRMLoginFunctionalityTest@563f38c4]" started-at="2025-07-31T20:18:25 IST" name="setup" finished-at="2025-07-31T20:18:51 IST" duration-ms="25086" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@862f408]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.OrangeHRMLoginFunctionalityTest@563f38c4]" started-at="2025-07-31T20:18:25 IST" name="setup" finished-at="2025-07-31T20:18:48 IST" duration-ms="22499" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@33ecbd6c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.OrangeHRMLoginFunctionalityTest@563f38c4]" started-at="2025-07-31T20:18:25 IST" name="setup" finished-at="2025-07-31T20:18:50 IST" duration-ms="24766" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -283,7 +302,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setup([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.OrangeHRMLoginFunctionalityTest@3e8c3cb]" started-at="2025-07-30T16:53:35 IST" name="setup" finished-at="2025-07-30T16:54:06 IST" duration-ms="31107" status="PASS">
+        <test-method is-config="true" signature="setup([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.OrangeHRMLoginFunctionalityTest@563f38c4]" started-at="2025-07-31T20:18:25 IST" name="setup" finished-at="2025-07-31T20:18:33 IST" duration-ms="7796" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@5c723f2d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.OrangeHRMLoginFunctionalityTest@563f38c4]" started-at="2025-07-31T20:18:25 IST" name="setup" finished-at="2025-07-31T20:18:34 IST" duration-ms="8674" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -294,7 +324,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setup([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.OrangeHRMLoginFunctionalityTest@3e8c3cb]" started-at="2025-07-30T16:53:35 IST" name="setup" finished-at="2025-07-30T16:53:46 IST" duration-ms="10500" status="PASS">
+        <test-method is-config="true" signature="setup([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.OrangeHRMLoginFunctionalityTest@563f38c4]" started-at="2025-07-31T20:18:25 IST" name="setup" finished-at="2025-07-31T20:18:52 IST" duration-ms="26705" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -305,7 +335,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyThatAdminCannotLogInWithOnlyPasswordFilled(java.util.Map)[pri:0, instance:com.tmb.tests.OrangeHRMLoginFunctionalityTest@3e8c3cb]" started-at="2025-07-30T16:53:46 IST" name="verifyThatAdminCannotLogInWithOnlyPasswordFilled" data-provider="getData" finished-at="2025-07-30T16:53:48 IST" duration-ms="2783" status="PASS">
+        <test-method is-config="true" signature="setup([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.OrangeHRMLoginFunctionalityTest@563f38c4]" started-at="2025-07-31T20:18:25 IST" name="setup" finished-at="2025-07-31T20:18:33 IST" duration-ms="7720" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@366d8b97]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.OrangeHRMLoginFunctionalityTest@563f38c4]" started-at="2025-07-31T20:18:25 IST" name="setup" finished-at="2025-07-31T20:18:33 IST" duration-ms="7590" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@7654f833]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyThatAdminCannotLogInWithOnlyPasswordFilled(java.util.Map)[pri:0, instance:com.tmb.tests.OrangeHRMLoginFunctionalityTest@563f38c4]" started-at="2025-07-31T20:18:33 IST" name="verifyThatAdminCannotLogInWithOnlyPasswordFilled" data-provider="getData" finished-at="2025-07-31T20:18:35 IST" duration-ms="2104" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -316,7 +368,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyThatAdminCannotLogInWithOnlyPasswordFilled -->
-        <test-method signature="verifyThatAdminCannotLogInWithOnlyUsernameFilled(java.util.Map)[pri:0, instance:com.tmb.tests.OrangeHRMLoginFunctionalityTest@3e8c3cb]" started-at="2025-07-30T16:53:46 IST" name="verifyThatAdminCannotLogInWithOnlyUsernameFilled" data-provider="getData" finished-at="2025-07-30T16:53:48 IST" duration-ms="2667" status="PASS">
+        <test-method signature="verifyThatAdminCannotLogInWithOnlyUsernameFilled(java.util.Map)[pri:0, instance:com.tmb.tests.OrangeHRMLoginFunctionalityTest@563f38c4]" started-at="2025-07-31T20:18:33 IST" name="verifyThatAdminCannotLogInWithOnlyUsernameFilled" data-provider="getData" finished-at="2025-07-31T20:18:35 IST" duration-ms="1974" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -327,18 +379,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyThatAdminCannotLogInWithOnlyUsernameFilled -->
-        <test-method signature="verifyThatAdminCanLogInWithValidCredentials(java.util.Map)[pri:0, instance:com.tmb.tests.OrangeHRMLoginFunctionalityTest@3e8c3cb]" started-at="2025-07-30T16:53:46 IST" name="verifyThatAdminCanLogInWithValidCredentials" data-provider="getData" finished-at="2025-07-30T16:53:53 IST" duration-ms="6999" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{fname=amuthan, password=admin123, currentpassword=admin123, browser=chrome, testname=verifyThatAdminCanLogInWithValidCredentials, newpassword=admin111, confirmpassword=admin111, execute=yes, username=Admin}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyThatAdminCanLogInWithValidCredentials -->
-        <test-method signature="verifyThatAdminCannotLogInWithInvalidCredentials(java.util.Map)[pri:0, instance:com.tmb.tests.OrangeHRMLoginFunctionalityTest@3e8c3cb]" started-at="2025-07-30T16:53:48 IST" name="verifyThatAdminCannotLogInWithInvalidCredentials" data-provider="getData" finished-at="2025-07-30T16:53:52 IST" duration-ms="3970" status="PASS">
+        <test-method signature="verifyThatAdminCannotLogInWithInvalidCredentials(java.util.Map)[pri:0, instance:com.tmb.tests.OrangeHRMLoginFunctionalityTest@563f38c4]" started-at="2025-07-31T20:18:33 IST" name="verifyThatAdminCannotLogInWithInvalidCredentials" data-provider="getData" finished-at="2025-07-31T20:18:37 IST" duration-ms="3864" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -349,34 +390,34 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyThatAdminCannotLogInWithInvalidCredentials -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tmb.tests.OrangeHRMLoginFunctionalityTest@3e8c3cb]" started-at="2025-07-30T16:53:48 IST" name="teardown" finished-at="2025-07-30T16:53:49 IST" duration-ms="1023" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tmb.tests.OrangeHRMLoginFunctionalityTest@3e8c3cb]" started-at="2025-07-30T16:53:48 IST" name="teardown" finished-at="2025-07-30T16:53:49 IST" duration-ms="907" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tmb.tests.OrangeHRMLoginFunctionalityTest@3e8c3cb]" started-at="2025-07-30T16:53:52 IST" name="teardown" finished-at="2025-07-30T16:53:54 IST" duration-ms="2549" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tmb.tests.OrangeHRMLoginFunctionalityTest@3e8c3cb]" started-at="2025-07-30T16:53:53 IST" name="teardown" finished-at="2025-07-30T16:53:55 IST" duration-ms="1620" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method signature="verifyThatAdminCanLogInWithValidCredentials(java.util.Map)[pri:0, instance:com.tmb.tests.OrangeHRMLoginFunctionalityTest@3e8c3cb]" started-at="2025-07-30T16:54:02 IST" name="verifyThatAdminCanLogInWithValidCredentials" data-provider="getData" finished-at="2025-07-30T16:54:07 IST" duration-ms="4996" status="PASS">
+        <test-method signature="verifyThatAdminCanLogInWithValidCredentials(java.util.Map)[pri:0, instance:com.tmb.tests.OrangeHRMLoginFunctionalityTest@563f38c4]" started-at="2025-07-31T20:18:34 IST" name="verifyThatAdminCanLogInWithValidCredentials" data-provider="getData" finished-at="2025-07-31T20:18:40 IST" duration-ms="5852" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{fname=amuthan, password=admin123, currentpassword=admin123, browser=firefox, testname=verifyThatAdminCanLogInWithValidCredentials, newpassword=admin111, confirmpassword=admin111, execute=yes, username=Admin}]]>
+                <![CDATA[{fname=amuthan, password=admin123, currentpassword=admin123, browser=chrome, testname=verifyThatAdminCanLogInWithValidCredentials, newpassword=admin111, confirmpassword=admin111, execute=yes, username=Admin}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyThatAdminCanLogInWithValidCredentials -->
-        <test-method signature="verifyThatAdminCannotLogInWithOnlyUsernameFilled(java.util.Map)[pri:0, instance:com.tmb.tests.OrangeHRMLoginFunctionalityTest@3e8c3cb]" started-at="2025-07-30T16:54:05 IST" name="verifyThatAdminCannotLogInWithOnlyUsernameFilled" data-provider="getData" finished-at="2025-07-30T16:54:05 IST" duration-ms="482" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tmb.tests.OrangeHRMLoginFunctionalityTest@563f38c4]" started-at="2025-07-31T20:18:35 IST" name="teardown" finished-at="2025-07-31T20:18:36 IST" duration-ms="434" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tmb.tests.OrangeHRMLoginFunctionalityTest@563f38c4]" started-at="2025-07-31T20:18:35 IST" name="teardown" finished-at="2025-07-31T20:18:36 IST" duration-ms="603" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tmb.tests.OrangeHRMLoginFunctionalityTest@563f38c4]" started-at="2025-07-31T20:18:37 IST" name="teardown" finished-at="2025-07-31T20:18:38 IST" duration-ms="1241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tmb.tests.OrangeHRMLoginFunctionalityTest@563f38c4]" started-at="2025-07-31T20:18:40 IST" name="teardown" finished-at="2025-07-31T20:18:41 IST" duration-ms="580" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="verifyThatAdminCannotLogInWithOnlyUsernameFilled(java.util.Map)[pri:0, instance:com.tmb.tests.OrangeHRMLoginFunctionalityTest@563f38c4]" started-at="2025-07-31T20:18:48 IST" name="verifyThatAdminCannotLogInWithOnlyUsernameFilled" data-provider="getData" finished-at="2025-07-31T20:18:49 IST" duration-ms="937" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -387,22 +428,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyThatAdminCannotLogInWithOnlyUsernameFilled -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tmb.tests.OrangeHRMLoginFunctionalityTest@3e8c3cb]" started-at="2025-07-30T16:54:05 IST" name="teardown" finished-at="2025-07-30T16:54:09 IST" duration-ms="3623" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tmb.tests.OrangeHRMLoginFunctionalityTest@563f38c4]" started-at="2025-07-31T20:18:49 IST" name="teardown" finished-at="2025-07-31T20:18:50 IST" duration-ms="1382" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method signature="verifyThatAdminCannotLogInWithInvalidCredentials(java.util.Map)[pri:0, instance:com.tmb.tests.OrangeHRMLoginFunctionalityTest@3e8c3cb]" started-at="2025-07-30T16:54:06 IST" name="verifyThatAdminCannotLogInWithInvalidCredentials" data-provider="getData" finished-at="2025-07-30T16:54:11 IST" duration-ms="4295" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{fname=sunil, password=pass, currentpassword=admin123, browser=firefox, testname=verifyThatAdminCannotLogInWithInvalidCredentials, newpassword=admin111, confirmpassword=admin111, execute=yes, username=Admin12}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyThatAdminCannotLogInWithInvalidCredentials -->
-        <test-method signature="verifyThatAdminCannotLogInWithOnlyPasswordFilled(java.util.Map)[pri:0, instance:com.tmb.tests.OrangeHRMLoginFunctionalityTest@3e8c3cb]" started-at="2025-07-30T16:54:07 IST" name="verifyThatAdminCannotLogInWithOnlyPasswordFilled" data-provider="getData" finished-at="2025-07-30T16:54:08 IST" duration-ms="1519" status="PASS">
+        <test-method signature="verifyThatAdminCannotLogInWithOnlyPasswordFilled(java.util.Map)[pri:0, instance:com.tmb.tests.OrangeHRMLoginFunctionalityTest@563f38c4]" started-at="2025-07-31T20:18:50 IST" name="verifyThatAdminCannotLogInWithOnlyPasswordFilled" data-provider="getData" finished-at="2025-07-31T20:18:52 IST" duration-ms="1310" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -413,15 +443,37 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyThatAdminCannotLogInWithOnlyPasswordFilled -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tmb.tests.OrangeHRMLoginFunctionalityTest@3e8c3cb]" started-at="2025-07-30T16:54:07 IST" name="teardown" finished-at="2025-07-30T16:54:11 IST" duration-ms="4193" status="PASS">
+        <test-method signature="verifyThatAdminCanLogInWithValidCredentials(java.util.Map)[pri:0, instance:com.tmb.tests.OrangeHRMLoginFunctionalityTest@563f38c4]" started-at="2025-07-31T20:18:51 IST" name="verifyThatAdminCanLogInWithValidCredentials" data-provider="getData" finished-at="2025-07-31T20:18:58 IST" duration-ms="7711" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{fname=amuthan, password=admin123, currentpassword=admin123, browser=firefox, testname=verifyThatAdminCanLogInWithValidCredentials, newpassword=admin111, confirmpassword=admin111, execute=yes, username=Admin}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyThatAdminCanLogInWithValidCredentials -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tmb.tests.OrangeHRMLoginFunctionalityTest@563f38c4]" started-at="2025-07-31T20:18:52 IST" name="teardown" finished-at="2025-07-31T20:18:55 IST" duration-ms="2990" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tmb.tests.OrangeHRMLoginFunctionalityTest@3e8c3cb]" started-at="2025-07-30T16:54:08 IST" name="teardown" finished-at="2025-07-30T16:54:13 IST" duration-ms="4572" status="PASS">
+        <test-method signature="verifyThatAdminCannotLogInWithInvalidCredentials(java.util.Map)[pri:0, instance:com.tmb.tests.OrangeHRMLoginFunctionalityTest@563f38c4]" started-at="2025-07-31T20:18:52 IST" name="verifyThatAdminCannotLogInWithInvalidCredentials" data-provider="getData" finished-at="2025-07-31T20:18:58 IST" duration-ms="5409" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{fname=sunil, password=pass, currentpassword=admin123, browser=firefox, testname=verifyThatAdminCannotLogInWithInvalidCredentials, newpassword=admin111, confirmpassword=admin111, execute=yes, username=Admin12}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyThatAdminCannotLogInWithInvalidCredentials -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tmb.tests.OrangeHRMLoginFunctionalityTest@563f38c4]" started-at="2025-07-31T20:18:58 IST" name="teardown" finished-at="2025-07-31T20:19:02 IST" duration-ms="4173" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tmb.tests.OrangeHRMLoginFunctionalityTest@3e8c3cb]" started-at="2025-07-30T16:54:11 IST" name="teardown" finished-at="2025-07-30T16:54:14 IST" duration-ms="3714" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tmb.tests.OrangeHRMLoginFunctionalityTest@563f38c4]" started-at="2025-07-31T20:18:58 IST" name="teardown" finished-at="2025-07-31T20:19:02 IST" duration-ms="3720" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
