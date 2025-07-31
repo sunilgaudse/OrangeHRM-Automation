@@ -15,6 +15,7 @@ public final class OrangeHRMUpdatePasswordPage extends BasePage{
 	private final By errorToastMessage = By.cssSelector("div.oxd-toast-content.oxd-toast-content--error p");
 	private final By passowrdMismatchMessage = By.xpath("//span[text()='Passwords do not match']");
 	private final By criteriaText = By.xpath("//span[text()='Should have at least 7 characters']");
+	private final By currentAndNewPasswordError =By.xpath("//span[text()='Required']");
 	
 	
 	public OrangeHRMUpdatePasswordPage enterCurrentPassword(String password) {
@@ -44,5 +45,8 @@ public final class OrangeHRMUpdatePasswordPage extends BasePage{
 	}
 	public String getCriteriaText() {
 		return new WebDriverWait(DriverManager.getDriver(), 10).until(ExpectedConditions.visibilityOfElementLocated(criteriaText)).getText();
+	}
+	public String getPassErrorText() {
+		return new WebDriverWait(DriverManager.getDriver(), 10).until(ExpectedConditions.visibilityOfElementLocated(currentAndNewPasswordError)).getText();
 	}
 }
