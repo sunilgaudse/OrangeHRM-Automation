@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 import com.tmb.annotations.Sheet;
 import com.tmb.listeners.MethodInterceptor;
 import com.tmb.pages.OrangeHRMLoginPage;
+import com.tmb.pages.OrangeHRMUpdatePasswordPage;
 import com.tmb.reports.ExtentLogger;
 
 @Listeners(MethodInterceptor.class)
@@ -73,5 +74,21 @@ public class UserAccountManagementTest extends BaseTests{
 		Assertions.assertThat(criteriaText)
 		.contains("Should have at least 7 characters");
 	}
+	
+	@Test
+	public void verifyThatUserCannotChangePasswordWhenAllFieldsAreEmpty(Map<String, String>data) {
+		try {
+			ExtentLogger.pass("Test is running in "+ data.get("browser") +" browser." , true);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		String errorText = new OrangeHRMLoginPage().enterUsername(data.get("username")).enterPassword(data.get("password")).clickLogin()
+				.clickWelcome().clickChangePassword().clickSaveButton()
+				.getPassErrorText();
+		String passMismatch = new OrangeHRMUpdatePasswordPage().getpassMissmatchText();
+		Assertions.assertThat(errorText).as("Current and new pasword error").contains("Required");
+		Assertions.assertThat(passMismatch).as("Confirm password error").contains("Passwords do not match");
+	}
+
 
 }
