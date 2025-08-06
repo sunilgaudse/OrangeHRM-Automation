@@ -76,4 +76,5 @@ public class OrangeHRMAdminFunctionalityPage extends BasePage{
 		System.out.println("String is :  "+ countText);
 		return Integer.parseInt(countText.replaceAll("[^0-9]",""));
 	}
+
 }
