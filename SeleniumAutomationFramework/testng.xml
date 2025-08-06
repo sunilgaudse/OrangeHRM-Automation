@@ -11,6 +11,7 @@
 		<classes>
 			<class name="com.tmb.tests.OrangeHRMLoginFunctionalityTest" />
 			<class name="com.tmb.tests.UserAccountManagementTest" />
+			<class name="com.tmb.tests.AdminFunctionalityTest"/>
 			<!--<class name="com.tmb.tests.LoginpageTest"/> <class name="com.tmb.tests.HomepageTests"/> -->
 		</classes>
 	</test> <!-- Test -->

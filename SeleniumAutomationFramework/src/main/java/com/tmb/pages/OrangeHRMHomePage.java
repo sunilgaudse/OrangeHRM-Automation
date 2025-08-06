@@ -1,4 +1,4 @@
-package com.tmb.pages;
+  package com.tmb.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -13,6 +13,12 @@ public final class OrangeHRMHomePage extends BasePage{
 	private final By profileName = By.className("oxd-userdropdown-name");
 	private final By logout = By.className("oxd-userdropdown-link");
 	private final By changePassword =By.xpath("//a[text()='Change Password']");
+	private final LeftMenuComponent leftMenuComponent;
+	
+	public OrangeHRMHomePage() {
+		this.leftMenuComponent = new LeftMenuComponent();
+	}
+	
 	
 	public OrangeHRMHomePage clickWelcome() {
 		click(profileName,"profile name");
@@ -28,6 +34,10 @@ public final class OrangeHRMHomePage extends BasePage{
 		//wait.until(d->d.findElement(logout).isEnabled());//Java 8 way.
 		click(logout,"logout button");
 		return new OrangeHRMLoginPage();
+	}
+	public OrangeHRMAdminFunctionalityPage navigateToAddCustomerPage() {
+		leftMenuComponent.setLinkMainMenu("Admin");
+		return new OrangeHRMAdminFunctionalityPage();
 	}
 
 }
