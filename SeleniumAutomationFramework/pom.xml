@@ -16,8 +16,8 @@
             <suiteXmlFile>testng.xml</suiteXmlFile>
         </suiteXmlFiles>
         <systemPropertyVariables>
-            <dataProviderThreadCount>6</dataProviderThreadCount>
-            <testThreadCount>6</testThreadCount>
+            <dataProviderThreadCount>8</dataProviderThreadCount>
+            <testThreadCount>8</testThreadCount>
         </systemPropertyVariables>
             </configuration>
         </plugin>
