@@ -16,7 +16,7 @@ public final class OrangeHRMUpdatePasswordPage extends BasePage{
 	private final By passowrdMismatchMessage = By.xpath("//span[text()='Passwords do not match']");
 	private final By criteriaText = By.xpath("//span[text()='Should have at least 7 characters']");
 	private final By currentAndNewPasswordError =By.xpath("//span[text()='Required']");
-	
+
 	
 	public OrangeHRMUpdatePasswordPage enterCurrentPassword(String password) {
 		sendKeys(currentPassword, password,"Current Password");
