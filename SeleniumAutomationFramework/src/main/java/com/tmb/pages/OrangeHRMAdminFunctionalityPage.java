@@ -15,12 +15,13 @@ public class OrangeHRMAdminFunctionalityPage extends BasePage{
 	private final By statusDropdown = By.xpath("//label[text()='Status']/parent::div/following-sibling::div");
 	private final By enableStatus = By.xpath("//div[@role='option']/span[text()='Enabled']");
 	private final By textBoxEmployeeName = By.xpath("//input[@placeholder='Type for hints...']");
-	private final By eNameDropDown = By.xpath("//div[@role='option']/span[text()='Orange  Test']");
+	private final By eNameDropDown = By.xpath("//div[@role='option']/span[text()='Orange Middle NameMiddle Name Test']");
 	private final By textBoxUsername = By.xpath("//label[text()='Username']/parent::div/following-sibling::div/input");
 	private final By textBoxPassword = By.xpath("//label[text()='Password']/parent::div/following-sibling::div/input");
 	private final By textBoxConfirmPassword = By.xpath("//label[text()='Confirm Password']/parent::div/following-sibling::div/input");
 	private final By saveButton = By.xpath("//button[text()=' Save ']");
 	private final By successToastMessage = By.cssSelector("div.oxd-toast-content.oxd-toast-content--success p");
+	private final By countElement = By.xpath("//span[@class='oxd-text oxd-text--span']");
 	
 	public OrangeHRMAdminFunctionalityPage clickAddButton() {
 		click(addButton,"Add user");
@@ -69,8 +70,11 @@ public class OrangeHRMAdminFunctionalityPage extends BasePage{
 	public String getSuccessToastmessgae() {
 		return new WebDriverWait(DriverManager.getDriver(),10).until(ExpectedConditions.visibilityOfElementLocated(successToastMessage)).getText();
 	}
-	
-	
-	
+	public int elemenCount() {
+//		new WebDriverWait(DriverManager.getDriver(), 10).until(ExpectedConditions.visibilityOfElementLocated(countElement)).getText();
+		String countText = new WebDriverWait(DriverManager.getDriver(), 10).until(ExpectedConditions.visibilityOfElementLocated(countElement)).getText();
+		System.out.println("String is :  "+ countText);
+		return Integer.parseInt(countText.replaceAll("[^0-9]",""));
+	}
 
 }

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-08-06T23:09:17 IST" name="Suite" finished-at="2025-08-06T23:09:59 IST" duration-ms="42499">
+    <groups>
+    </groups>
+    <test started-at="2025-08-06T23:09:17 IST" name="Test" finished-at="2025-08-06T23:09:59 IST" duration-ms="42499">
+      <class name="com.tmb.tests.AdminFunctionalityTest">
+        <test-method is-config="true" signature="setup([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.AdminFunctionalityTest@25ce9dc4]" started-at="2025-08-06T23:09:19 IST" name="setup" finished-at="2025-08-06T23:09:27 IST" duration-ms="7968" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@6535117e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.AdminFunctionalityTest@25ce9dc4]" started-at="2025-08-06T23:09:19 IST" name="setup" finished-at="2025-08-06T23:09:26 IST" duration-ms="7516" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@1d1cbd0f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.AdminFunctionalityTest@25ce9dc4]" started-at="2025-08-06T23:09:19 IST" name="setup" finished-at="2025-08-06T23:09:34 IST" duration-ms="15760" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@6fa13e6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.AdminFunctionalityTest@25ce9dc4]" started-at="2025-08-06T23:09:19 IST" name="setup" finished-at="2025-08-06T23:09:33 IST" duration-ms="13925" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@3af7d855]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyThatTheAdminCanAddNewUser(java.util.Map)[pri:0, instance:com.tmb.tests.AdminFunctionalityTest@25ce9dc4]" started-at="2025-08-06T23:09:26 IST" name="verifyThatTheAdminCanAddNewUser" data-provider="getData" finished-at="2025-08-06T23:09:40 IST" duration-ms="13716" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=admin123, browser=chrome, testname=verifyThatTheAdminCanAddNewUser, newpassword=sham12345, confirmpassword=sham12345, execute=yes, employeename=Orange Middle NameMiddle Name Test, username=Admin}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyThatTheAdminCanAddNewUser -->
+        <test-method signature="verifyThaTheNumberOfUserRecordsIncreasesAfterAddingANewUser(java.util.Map)[pri:0, instance:com.tmb.tests.AdminFunctionalityTest@25ce9dc4]" started-at="2025-08-06T23:09:27 IST" name="verifyThaTheNumberOfUserRecordsIncreasesAfterAddingANewUser" data-provider="getData" finished-at="2025-08-06T23:09:49 IST" duration-ms="22235" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=admin123, browser=chrome, testname=verifyThaTheNumberOfUserRecordsIncreasesAfterAddingANewUser, newpassword=sham12345, confirmpassword=sham12345, execute=yes, employeename=Orange Middle NameMiddle Name Test, username=Admin}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyThaTheNumberOfUserRecordsIncreasesAfterAddingANewUser -->
+        <test-method signature="verifyThatTheAdminCanAddNewUser(java.util.Map)[pri:0, instance:com.tmb.tests.AdminFunctionalityTest@25ce9dc4]" started-at="2025-08-06T23:09:33 IST" name="verifyThatTheAdminCanAddNewUser" data-provider="getData" finished-at="2025-08-06T23:09:48 IST" duration-ms="15856" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=admin123, browser=firefox, testname=verifyThatTheAdminCanAddNewUser, newpassword=sham12345, confirmpassword=sham12345, execute=yes, employeename=Orange Middle NameMiddle Name Test, username=Admin}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyThatTheAdminCanAddNewUser -->
+        <test-method signature="verifyThaTheNumberOfUserRecordsIncreasesAfterAddingANewUser(java.util.Map)[pri:0, instance:com.tmb.tests.AdminFunctionalityTest@25ce9dc4]" started-at="2025-08-06T23:09:34 IST" name="verifyThaTheNumberOfUserRecordsIncreasesAfterAddingANewUser" data-provider="getData" finished-at="2025-08-06T23:09:58 IST" duration-ms="23311" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=admin123, browser=firefox, testname=verifyThaTheNumberOfUserRecordsIncreasesAfterAddingANewUser, newpassword=sham12345, confirmpassword=sham12345, execute=yes, employeename=Orange Middle NameMiddle Name Test, username=Admin}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyThaTheNumberOfUserRecordsIncreasesAfterAddingANewUser -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tmb.tests.AdminFunctionalityTest@25ce9dc4]" started-at="2025-08-06T23:09:40 IST" name="teardown" finished-at="2025-08-06T23:09:41 IST" duration-ms="564" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tmb.tests.AdminFunctionalityTest@25ce9dc4]" started-at="2025-08-06T23:09:48 IST" name="teardown" finished-at="2025-08-06T23:09:50 IST" duration-ms="1845" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tmb.tests.AdminFunctionalityTest@25ce9dc4]" started-at="2025-08-06T23:09:49 IST" name="teardown" finished-at="2025-08-06T23:09:49 IST" duration-ms="452" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.tmb.tests.AdminFunctionalityTest@25ce9dc4]" started-at="2025-08-06T23:09:58 IST" name="teardown" finished-at="2025-08-06T23:09:59 IST" duration-ms="1604" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.tmb.tests.AdminFunctionalityTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
