@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite" data-provider-thread-count="8">
+<suite name="Suite" data-provider-thread-count="10">
 	<listeners>
 		<listener class-name="com.tmb.listeners.ListenerClass" />
 		<listener class-name="com.tmb.listeners.MethodInterceptor" />
 		<listener class-name="com.tmb.listeners.AnnotationTransformer" />
 
 	</listeners>
-	<test thread-count="8" name="Test" parallel="methods">
+	<test thread-count="10" name="Test" parallel="methods">
 		<classes>
 			<class name="com.tmb.tests.OrangeHRMLoginFunctionalityTest" />
 			<class name="com.tmb.tests.UserAccountManagementTest" />
 			<class name="com.tmb.tests.AdminFunctionalityTest"/>
+			<method>
+				<exclude name="verifThatTheAdminCanChangeUserInformation"/>
+			</method>
 			<!--<class name="com.tmb.tests.LoginpageTest"/> <class name="com.tmb.tests.HomepageTests"/> -->
 		</classes>
 	</test> <!-- Test -->

@@ -1,5 +1,7 @@
 package com.tmb.pages;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -35,18 +37,18 @@ public final class OrangeHRMUpdatePasswordPage extends BasePage{
 		return this;
 	}
 	public String getSuccessToastmessgae() {
-		return new WebDriverWait(DriverManager.getDriver(),10).until(ExpectedConditions.visibilityOfElementLocated(successToastMessage)).getText();
+		return new WebDriverWait(DriverManager.getDriver(), Duration.ofMillis(1000)).until(ExpectedConditions.visibilityOfElementLocated(successToastMessage)).getText();
 	}
 	public String getErrorToastMessage() {
-		return new WebDriverWait(DriverManager.getDriver(),10).until(ExpectedConditions.visibilityOfElementLocated(errorToastMessage)).getText();
+		return new WebDriverWait(DriverManager.getDriver(), Duration.ofMillis(1000)).until(ExpectedConditions.visibilityOfElementLocated(errorToastMessage)).getText();
 	}
 	public String getpassMissmatchText() {
-		return new WebDriverWait(DriverManager.getDriver(), 10).until(ExpectedConditions.visibilityOfElementLocated(passowrdMismatchMessage)).getText();
+		return new WebDriverWait(DriverManager.getDriver(), Duration.ofMillis(1000)).until(ExpectedConditions.visibilityOfElementLocated(passowrdMismatchMessage)).getText();
 	}
 	public String getCriteriaText() {
-		return new WebDriverWait(DriverManager.getDriver(), 10).until(ExpectedConditions.visibilityOfElementLocated(criteriaText)).getText();
+		return new WebDriverWait(DriverManager.getDriver(), Duration.ofMillis(1000)).until(ExpectedConditions.visibilityOfElementLocated(criteriaText)).getText();
 	}
 	public String getPassErrorText() {
-		return new WebDriverWait(DriverManager.getDriver(), 10).until(ExpectedConditions.visibilityOfElementLocated(currentAndNewPasswordError)).getText();
+		return new WebDriverWait(DriverManager.getDriver(), Duration.ofMillis(1000)).until(ExpectedConditions.visibilityOfElementLocated(currentAndNewPasswordError)).getText();
 	}
 }

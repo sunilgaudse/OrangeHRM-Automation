@@ -13,6 +13,7 @@ import com.tmb.reports.ExtentReport;
 
 public  class ListenerClass implements ITestListener ,ISuiteListener{
 //public static Logger logger = LogManager.getLogger(ListenerClass.class);
+	private static int counter =1;
 
 	@Override
 	public void onStart(ISuite suite) {
@@ -36,7 +37,9 @@ public  class ListenerClass implements ITestListener ,ISuiteListener{
 
 	@Override
 	public void onTestStart(ITestResult result) {
-		ExtentReport.createTests(result.getMethod().getMethodName());
+		String name = result.getMethod().getMethodName();
+		String numberString = String.format("%02d", counter++);
+		ExtentReport.createTests(numberString+". "+name);
 		
 	}
 
@@ -53,6 +56,7 @@ public  class ListenerClass implements ITestListener ,ISuiteListener{
 			ExtentLogger.fail(Arrays.toString(result.getThrowable().getStackTrace()));
 		} catch (Exception e) {
 			e.printStackTrace();
+			System.out.println(e.getMessage());
 		}
 		
 	}

@@ -1,8 +1,9 @@
 package com.tmb.tests;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 import java.util.List;
 
-import static org.assertj.core.api.Assertions.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;

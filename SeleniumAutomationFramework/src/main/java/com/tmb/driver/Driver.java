@@ -1,5 +1,6 @@
 package com.tmb.driver;
 
+import java.time.Duration;
 import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
@@ -23,20 +24,16 @@ public class Driver {
 		if (Objects.isNull(DriverManager.getDriver())) {
 			
 			if(browser.equalsIgnoreCase("chrome")) {
-				//System.setProperty("webdriver.chrome.driver", FrameworkConstants.getChromeDriverPath());
-				WebDriverManager.chromedriver().setup();
 				WebDriver driver = new ChromeDriver();
 				DriverManager.setDriver(driver);
 			}
 			else if (browser.equalsIgnoreCase("firefox")) {
-				//System.setProperty("webdriver.gecko.driver", FrameworkConstants.getGeckoDriverPath());
-				WebDriverManager.firefoxdriver().setup();
 				WebDriver driver = new FirefoxDriver();
 				DriverManager.setDriver(driver);
 			}
 			DriverManager.getDriver().get(PropertyUtils.get(ConfigProperties.URL));
 			DriverManager.getDriver().manage().window().maximize();
-			DriverManager.getDriver().manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
+			DriverManager.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		}	
 	}
 

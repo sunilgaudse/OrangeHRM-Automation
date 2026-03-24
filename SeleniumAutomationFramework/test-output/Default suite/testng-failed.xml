@@ -3,13 +3,35 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+      <class name="com.tmb.tests.OrangeHRMLoginFunctionalityTest">
+        <methods>
+          <include name="verifyThatAdminCannotLogInWithOnlyPasswordFilled"/>
+          <include name="setup"/>
+          <include name="verifyThatAdminCannotLogInWithOnlyUsernameFilled"/>
+          <include name="teardown"/>
+          <include name="verifyThatAdminCanLogInWithValidCredentials"/>
+          <include name="verifyThatAdminCannotLogInWithInvalidCredentials"/>
+        </methods>
+      </class> <!-- com.tmb.tests.OrangeHRMLoginFunctionalityTest -->
       <class name="com.tmb.tests.UserAccountManagementTest">
         <methods>
           <include name="setup"/>
           <include name="teardown"/>
+          <include name="verifyThatUserCannotChangePasswordWhenTheNewPasswordsDoNotMatch"/>
+          <include name="verifyThatUserCannotChangePasswordWhenThePasswoedDoesNotMeetSpecifiedCriteria"/>
           <include name="verifyThatUserCannotChangePasswordWithInvalidCurrentPassword"/>
+          <include name="verifyThatUserCannotChangePasswordWhenAllFieldsAreEmpty"/>
+          <include name="verifyThatUserCanChangePasswordWithValidCredentials"/>
         </methods>
       </class> <!-- com.tmb.tests.UserAccountManagementTest -->
+      <class name="com.tmb.tests.AdminFunctionalityTest">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="verifyThatTheAdminCanAddNewUser"/>
+          <include name="verifyThaTheNumberOfUserRecordsIncreasesAfterAddingANewUser"/>
+        </methods>
+      </class> <!-- com.tmb.tests.AdminFunctionalityTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

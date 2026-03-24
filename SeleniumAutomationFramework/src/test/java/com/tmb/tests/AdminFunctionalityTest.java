@@ -46,8 +46,24 @@ public class AdminFunctionalityTest extends BaseTests{
 		.withFailMessage("Expected user count to increase but it did not. Before: %d, After: %d", initialCount, updatedCount)
 	    .isGreaterThan(initialCount);
 //		.as("Check that the user count increased after adding a new user")
-//		.isEqualTo(initialCount +1); commentng this as due to parallel execution expected count is deifeerent and hence test filed.
+//		.isEqualTo(initialCount +1); commenting this as due to parallel execution expected count is deifeerent and hence test filed.
 	}
-
-
+	
+	@Test
+	public void verifThatTheAdminCanChangeUserInformation(Map<String, String>data) {
+		try {
+			ExtentLogger.pass("Test is running in "+ data.get("browser") +" browser." , true);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		int initialCount = new OrangeHRMLoginPage().enterUsername(data.get("username")).enterPassword(data.get("password")).clickLogin().navigateToAddCustomerPage()
+				.elemenCount();
+		boolean isRowSelected = new OrangeHRMAdminFunctionalityPage().selectUserCheckbox().isUserCheckoxSelected();
+		Assertions.assertThat(isRowSelected).isTrue();
+		int updatedCount = new OrangeHRMAdminFunctionalityPage().clickAddButton().selectUserRole().selectStatus().enterEmployeeName(data.get("employeename"))
+				.enterUsername(data.get("username")).clickSaveButton()
+				.elemenCount();
+		Assertions.assertThat(updatedCount).isEqualTo(initialCount);
+		
+	}
 }
