@@ -1,5 +1,7 @@
 package com.tmb.pages;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -35,7 +37,7 @@ public final class OrangeHRMLoginPage extends BasePage{
 		return getPageTitle();
 	}
 	public String errorMessageText() {
-		new WebDriverWait(DriverManager.getDriver(), 15000)
+		new WebDriverWait(DriverManager.getDriver(), Duration.ofMillis(15000))
 		.until(ExpectedConditions.visibilityOfElementLocated(errorMessageElement));
 		return DriverManager.getDriver().findElement(errorMessageElement).getText();
 	}

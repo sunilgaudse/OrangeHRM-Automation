@@ -23,7 +23,6 @@ public class OrangeHRMLoginFunctionalityTest extends BaseTests{
 		try {
 			ExtentLogger.pass("Test is running in "+ data.get("browser") +" browser." , true);
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		String title = new OrangeHRMLoginPage()
@@ -40,7 +39,6 @@ public class OrangeHRMLoginFunctionalityTest extends BaseTests{
 		try {
 			ExtentLogger.pass("Test is running in "+ data.get("browser") +" browser." , true);
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		String title = new OrangeHRMLoginPage()
@@ -54,7 +52,6 @@ public class OrangeHRMLoginFunctionalityTest extends BaseTests{
 		try {
 			ExtentLogger.pass("Test is running in "+ data.get("browser") +" browser." , true);
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		String requiredString =new OrangeHRMLoginPage()
@@ -67,11 +64,10 @@ public class OrangeHRMLoginFunctionalityTest extends BaseTests{
 		try {
 			ExtentLogger.pass("Test is running in "+ data.get("browser") +" browser." , true);
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		String requiredString =new OrangeHRMLoginPage()
-				.enterUsername(data.get("password")).clickLogin1().requiredText();
+				.enterPassword(data.get("password")).clickLogin1().requiredText();
 		Assertions.assertThat(requiredString)
 		.isEqualTo("Required");
 	}
