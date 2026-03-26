@@ -9,19 +9,19 @@ import com.tmb.utils.PropertyUtils;
 public class RetryFailedTests implements IRetryAnalyzer {
 
 	private int count =0;
-	private int retries =1;
+	private static final int retries =1;
 	@Override
 	public boolean retry(ITestResult result) {
-		boolean value = false;
 		try {
-			if(PropertyUtils.get(ConfigProperties.RETRYFAILEDTESTS).equalsIgnoreCase("yes")) {
-				 value = count<retries;
+			if(PropertyUtils.get(ConfigProperties.RETRYFAILEDTESTS).equalsIgnoreCase("yes")& (count<retries)) {
 				count++;
+				result.setStatus(ITestResult.FAILURE);
+	            return true;
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return value;
+		return false;
 	}
 
 }

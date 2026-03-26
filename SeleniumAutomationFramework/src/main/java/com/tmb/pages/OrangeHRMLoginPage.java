@@ -10,7 +10,7 @@ import com.tmb.driver.DriverManager;
 
 public final class OrangeHRMLoginPage extends BasePage{
 	
-	private final By textboxUsername = By.xpath("//input[@name='username']");
+	private final By textboxUsername = By.xpath("/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input");
 	private final By textboxPassword =By.xpath("//input[@name='password' and @type='password'] ");
 	private final By buttonLogin = By.xpath("//button[@type='submit']");
 	private final By errorMessageElement = By.xpath("//p[text()='Invalid credentials']");

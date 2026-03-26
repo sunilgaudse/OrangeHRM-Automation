@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="Suite" data-provider-thread-count="10">
+<suite name="Suite" data-provider-thread-count="5">
 
 	<listeners>
 		<listener class-name="com.tmb.listeners.ListenerClass" />
@@ -10,7 +10,7 @@
 
 	</listeners>
 
-	<test thread-count="10" name="Test" parallel="methods">
+	<test thread-count="5" name="Test" parallel="methods">
 		<classes>
 			<class name="com.tmb.tests.OrangeHRMLoginFunctionalityTest" />
 			<class name="com.tmb.tests.UserAccountManagementTest" />

@@ -21,7 +21,7 @@ public class Driver {
 	}
 
 	public static void initDriver(String browser) throws Exception {
-		if (Objects.isNull(DriverManager.getDriver())) {
+//		if (Objects.isNull(DriverManager.getDriver())) {
 			
 			if(browser.equalsIgnoreCase("chrome")) {
 				WebDriver driver = new ChromeDriver();
@@ -34,7 +34,7 @@ public class Driver {
 			DriverManager.getDriver().get(PropertyUtils.get(ConfigProperties.URL));
 			DriverManager.getDriver().manage().window().maximize();
 			DriverManager.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		}	
+//		}	
 	}
 
 	public static void quiteDriver() {
