@@ -11,9 +11,9 @@ public class RetryFailedTests implements IRetryAnalyzer {
 	private int count =0;
 	private static final int retries =1;
 	@Override
-	public boolean retry(ITestResult result) {
+	public synchronized boolean retry(ITestResult result) {
 		try {
-			if(PropertyUtils.get(ConfigProperties.RETRYFAILEDTESTS).equalsIgnoreCase("yes")& (count<retries)) {
+			if(PropertyUtils.get(ConfigProperties.RETRYFAILEDTESTS).equalsIgnoreCase("yes")&& (count<retries)) {
 				count++;
 				result.setStatus(ITestResult.FAILURE);
 	            return true;
