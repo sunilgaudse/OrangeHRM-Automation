@@ -16,7 +16,6 @@ public class RetryFailedTests implements IRetryAnalyzer {
 			if(PropertyUtils.get(ConfigProperties.RETRYFAILEDTESTS).equalsIgnoreCase("yes")&& (count<retries)) {
 				count++;
 				System.out.println("Retry triggered for: " + result.getName());
-				result.setStatus(ITestResult.FAILURE);
 	            return true;
 			}
 		} catch (Exception e) {
