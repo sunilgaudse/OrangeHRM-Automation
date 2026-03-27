@@ -10,9 +10,11 @@ import org.testng.ITestResult;
 
 import com.tmb.reports.ExtentLogger;
 import com.tmb.reports.ExtentReport;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public  class ListenerClass implements ITestListener ,ISuiteListener{
-//public static Logger logger = LogManager.getLogger(ListenerClass.class);
+public static Logger logger = LoggerFactory.getLogger(ListenerClass.class);
 	private static int counter =1;
 
 	@Override
@@ -40,12 +42,14 @@ public  class ListenerClass implements ITestListener ,ISuiteListener{
 		String name = result.getMethod().getMethodName();
 		String numberString = String.format("%02d", counter++);
 		ExtentReport.createTests(numberString+". "+name);
+		logger.info("STARTED: " + result.getMethod().getMethodName());
 		
 	}
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
 		ExtentLogger.pass(result.getMethod().getMethodName()+ " is passed.");
+		logger.info("PASSED: " + result.getMethod().getMethodName());
 	}
 
 	@Override
@@ -54,6 +58,8 @@ public  class ListenerClass implements ITestListener ,ISuiteListener{
 			ExtentLogger.fail(result.getMethod().getMethodName()+ " is failed.",true);
 			ExtentLogger.fail(result.getThrowable().toString());
 			ExtentLogger.fail(Arrays.toString(result.getThrowable().getStackTrace()));
+			logger.error("FAILED: " + result.getMethod().getMethodName());
+	        logger.error("Reason: ", result.getThrowable());
 		} catch (Exception e) {
 			e.printStackTrace();
 			System.out.println(e.getMessage());
@@ -64,6 +70,7 @@ public  class ListenerClass implements ITestListener ,ISuiteListener{
 	@Override
 	public void onTestSkipped(ITestResult result) {
 		ExtentLogger.skip(result.getMethod().getMethodName()+ " is skip.");
+		logger.warn("SKIPPED: " + result.getMethod().getMethodName());
 	}
 
 	@Override
