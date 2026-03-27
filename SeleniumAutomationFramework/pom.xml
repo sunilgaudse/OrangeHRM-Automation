@@ -6,23 +6,23 @@
 	<artifactId>SeleniumAutomationFramework</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<build>
-    <plugins>
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-surefire-plugin</artifactId>
-            <version>3.0.0</version> <!-- Specify the version -->
-            <configuration>
-                 <suiteXmlFiles>
-            <suiteXmlFile>testng.xml</suiteXmlFile>
-        </suiteXmlFiles>
-        <systemPropertyVariables>
-            <dataProviderThreadCount>8</dataProviderThreadCount>
-            <testThreadCount>8</testThreadCount>
-        </systemPropertyVariables>
-            </configuration>
-        </plugin>
-    </plugins>
-</build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0</version> <!-- Specify the version -->
+				<configuration>
+					<suiteXmlFiles>
+						<suiteXmlFile>testng.xml</suiteXmlFile>
+					</suiteXmlFiles>
+					<systemPropertyVariables>
+						<dataProviderThreadCount>8</dataProviderThreadCount>
+						<testThreadCount>8</testThreadCount>
+					</systemPropertyVariables>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 
 	<dependencies>
 		<!--
@@ -39,22 +39,22 @@
 			<artifactId>testng</artifactId>
 			<version>7.11.0</version>
 			<scope>compile</scope>
-			
+
 		</dependency>
-		
+
 		<!-- https://mvnrepository.com/artifact/org.assertj/assertj-core -->
 		<dependency>
 			<groupId>org.assertj</groupId>
 			<artifactId>assertj-core</artifactId>
 			<version>3.26.3</version>
-			
+
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.assertj/assertj-joda-time -->
 		<dependency>
 			<groupId>org.assertj</groupId>
 			<artifactId>assertj-joda-time</artifactId>
 			<version>2.2.0</version>
-			
+
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/joda-time/joda-time -->
 		<dependency>
@@ -74,9 +74,9 @@
 			<version>1.7.32</version>
 		</dependency>
 		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-simple</artifactId>
-			<version>1.7.32</version>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-slf4j-impl</artifactId>
+			<version>2.24.2</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
 		<dependency>
