@@ -24,8 +24,8 @@ public class OrangeHRMAdminFunctionalityPage extends BasePage{
 	private final By textBoxPassword = By.xpath("//label[text()='Password']/parent::div/following-sibling::div/input");
 	private final By textBoxConfirmPassword = By.xpath("//label[text()='Confirm Password']/parent::div/following-sibling::div/input");
 	private final By saveButton = By.xpath("//button[text()=' Save ']");
-//	private final By successToastMessage = By.cssSelector("div.oxd-toast-content oxd-toast-content--success p");
-	private final By successToastMessage =By.xpath("//div[@class='oxd-toast-content oxd-toast-content--success']/p");
+	private final By successToastMessage = By.cssSelector("div.oxd-toast-content.oxd-toast-content--success p");
+//	private final By successToastMessage =By.xpath("//div[@class='oxd-toast-content oxd-toast-content--success']/p");
 	private final By countElement = By.xpath("//span[@class='oxd-text oxd-text--span']");
 	private final By userCheckBox = By.xpath("//label/input[@type='checkbox']");
 	private final By editButtonSelectedRow =By.xpath("//input[@type='checkbox' and @value='1']/ancestor::div[contains(@class,'oxd-table-row')]//button/i[contains(@class,'bi-pencil')]");
