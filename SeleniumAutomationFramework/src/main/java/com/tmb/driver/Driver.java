@@ -4,9 +4,11 @@ import java.time.Duration;
 import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.tmb.enums.ConfigProperties;
 import com.tmb.utils.PropertyUtils;
@@ -33,11 +35,15 @@ public class Driver {
 			}
 			DriverManager.getDriver().get(PropertyUtils.get(ConfigProperties.URL));
 			DriverManager.getDriver().manage().window().maximize();
+//			new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(20))
+//		    .until(driver -> ((JavascriptExecutor) driver)
+//		        .executeScript("return document.readyState")
+//		        .equals("complete"));
 			DriverManager.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 //		}	
 	}
 
-	public static void quiteDriver() {
+	public static void quitDriver() {
 		if(Objects.nonNull(DriverManager.getDriver())) {
 			DriverManager.getDriver().quit();
 			DriverManager.unload();

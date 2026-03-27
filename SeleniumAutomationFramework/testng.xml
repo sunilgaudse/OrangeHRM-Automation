@@ -10,7 +10,7 @@
 
 	</listeners>
 
-	<test thread-count="5" name="Test" parallel="methods">
+	<test thread-count="5" name="Test" parallel="tests">
 		<classes>
 			<class name="com.tmb.tests.OrangeHRMLoginFunctionalityTest" />
 			<class name="com.tmb.tests.UserAccountManagementTest" />

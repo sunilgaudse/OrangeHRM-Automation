@@ -13,10 +13,20 @@ public final class OrangeHRMUpdatePasswordPage extends BasePage{
 	private final By newPassword = By.xpath("//label[text()='Password']/following::input[1]");
 	private final By confirmPassword =By.xpath("//label[text()='Confirm Password']/following::input[1]");
 	private final By saveButton =By.xpath("//button[@type='submit']"); 
+<<<<<<< HEAD
 	private final By successToastMessage = By.cssSelector("div.oxd-toast-content.oxd-toast-content--success p");
 //	private final By successToastMessage =By.xpath("//div[@class='oxd-toast-content oxd-toast-content--success']/p");
 	private final By errorToastMessage = By.cssSelector("div.oxd-toast-content.oxd-toast-content--error p");
 //	private final By errorToastMessage =By.xpath("//div[@class='oxd-toast-content oxd-toast-content--error']/p");
+=======
+
+	private final By successToastMessage = By.cssSelector("div.oxd-toast-content.oxd-toast-content--success p");
+
+//	private final By successToastMessage =By.xpath("//div[@class='oxd-toast-content oxd-toast-content--success']/p");
+	private final By errorToastMessage = By.cssSelector("div.oxd-toast-content.oxd-toast-content--error p");
+//	private final By errorToastMessage =By.xpath("//div[@class='oxd-toast-content oxd-toast-content--error']/p");
+
+>>>>>>> 766bebaba40c3b7040217fc14b901965d1c76179
 	private final By passowrdMismatchMessage = By.xpath("//span[text()='Passwords do not match']");
 	private final By criteriaText = By.xpath("//span[text()='Should have at least 7 characters']");
 	private final By currentAndNewPasswordError =By.xpath("//span[text()='Required']");
@@ -39,10 +49,10 @@ public final class OrangeHRMUpdatePasswordPage extends BasePage{
 		return this;
 	}
 	public String getSuccessToastmessgae() {
-		return new WebDriverWait(DriverManager.getDriver(), Duration.ofMillis(1000)).until(ExpectedConditions.visibilityOfElementLocated(successToastMessage)).getText();
+		return new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOfElementLocated(successToastMessage)).getText();
 	}
 	public String getErrorToastMessage() {
-		return new WebDriverWait(DriverManager.getDriver(), Duration.ofMillis(1000)).until(ExpectedConditions.visibilityOfElementLocated(errorToastMessage)).getText();
+		return new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOfElementLocated(errorToastMessage)).getText();
 	}
 	public String getpassMissmatchText() {
 		return new WebDriverWait(DriverManager.getDriver(), Duration.ofMillis(1000)).until(ExpectedConditions.visibilityOfElementLocated(passowrdMismatchMessage)).getText();

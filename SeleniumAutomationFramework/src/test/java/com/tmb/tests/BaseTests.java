@@ -14,7 +14,7 @@ public class BaseTests {
 	}
 
 	@SuppressWarnings("unchecked")
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	protected void setup(Object[]data) throws Exception {
 		Map<String, String> map = (Map<String, String>)data[0];
 		System.out.println(map.get("browser"));
@@ -23,6 +23,6 @@ public class BaseTests {
 
 	@AfterMethod
 	protected void teardown() {
-		Driver.quiteDriver();
+		Driver.quitDriver();
 	}
 }
