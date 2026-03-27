@@ -42,10 +42,10 @@ public final class OrangeHRMUpdatePasswordPage extends BasePage{
 		return this;
 	}
 	public String getSuccessToastmessgae() {
-		return new WebDriverWait(DriverManager.getDriver(), Duration.ofMillis(1000)).until(ExpectedConditions.visibilityOfElementLocated(successToastMessage)).getText();
+		return new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOfElementLocated(successToastMessage)).getText();
 	}
 	public String getErrorToastMessage() {
-		return new WebDriverWait(DriverManager.getDriver(), Duration.ofMillis(1000)).until(ExpectedConditions.visibilityOfElementLocated(errorToastMessage)).getText();
+		return new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOfElementLocated(errorToastMessage)).getText();
 	}
 	public String getpassMissmatchText() {
 		return new WebDriverWait(DriverManager.getDriver(), Duration.ofMillis(1000)).until(ExpectedConditions.visibilityOfElementLocated(passowrdMismatchMessage)).getText();
