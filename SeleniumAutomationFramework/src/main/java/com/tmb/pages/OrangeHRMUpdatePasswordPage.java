@@ -13,10 +13,13 @@ public final class OrangeHRMUpdatePasswordPage extends BasePage{
 	private final By newPassword = By.xpath("//label[text()='Password']/following::input[1]");
 	private final By confirmPassword =By.xpath("//label[text()='Confirm Password']/following::input[1]");
 	private final By saveButton =By.xpath("//button[@type='submit']"); 
-//	private final By successToastMessage = By.cssSelector("div.oxd-toast-content.oxd-toast-content--success p");
-	private final By successToastMessage =By.xpath("//div[@class='oxd-toast-content oxd-toast-content--success']/p");
-//	private final By errorToastMessage = By.cssSelector("div.oxd-toast-content.oxd-toast-content--error p");
-	private final By errorToastMessage =By.xpath("//div[@class='oxd-toast-content oxd-toast-content--error']/p");
+
+	private final By successToastMessage = By.cssSelector("div.oxd-toast-content.oxd-toast-content--success p");
+
+//	private final By successToastMessage =By.xpath("//div[@class='oxd-toast-content oxd-toast-content--success']/p");
+	private final By errorToastMessage = By.cssSelector("div.oxd-toast-content.oxd-toast-content--error p");
+//	private final By errorToastMessage =By.xpath("//div[@class='oxd-toast-content oxd-toast-content--error']/p");
+
 	private final By passowrdMismatchMessage = By.xpath("//span[text()='Passwords do not match']");
 	private final By criteriaText = By.xpath("//span[text()='Should have at least 7 characters']");
 	private final By currentAndNewPasswordError =By.xpath("//span[text()='Required']");
