@@ -16,10 +16,6 @@ public class RetryFailedTests implements IRetryAnalyzer {
 			if(PropertyUtils.get(ConfigProperties.RETRYFAILEDTESTS).equalsIgnoreCase("yes")&& (count<retries)) {
 				count++;
 				System.out.println("Retry triggered for: " + result.getName());
-<<<<<<< HEAD
-				result.setStatus(ITestResult.FAILURE);
-=======
->>>>>>> branch 'HRM-1.0' of https://github.com/sunilgaudse/OrangeHRM-Automation.git
 	            return true;
 			}
 		} catch (Exception e) {
