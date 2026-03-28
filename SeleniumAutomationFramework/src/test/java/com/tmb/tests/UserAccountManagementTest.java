@@ -3,6 +3,8 @@ package com.tmb.tests;
 import java.util.Map;
 
 import org.assertj.core.api.Assertions;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -15,6 +17,7 @@ import com.tmb.reports.ExtentLogger;
 @Listeners(MethodInterceptor.class)
 @Sheet("USERACCOUNTMANAGEMENTDATA")
 public class UserAccountManagementTest extends BaseTests{
+	public static Logger logger = LoggerFactory.getLogger(UserAccountManagementTest.class);
 	private UserAccountManagementTest() {
 		
 	}
@@ -23,6 +26,7 @@ public class UserAccountManagementTest extends BaseTests{
 	public void verifyThatUserCanChangePasswordWithValidCredentials(Map<String, String>data) {
 		try {
 			ExtentLogger.pass("Test is running in "+ data.get("browser") +" browser." , true);
+			logger.info("Test is running in "+ data.get("browser") +" browser.");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -37,6 +41,7 @@ public class UserAccountManagementTest extends BaseTests{
 	public void verifyThatUserCannotChangePasswordWithInvalidCurrentPassword(Map<String, String>data) {
 		try {
 			ExtentLogger.pass("Test is running in "+ data.get("browser") +" browser." , true);
+			logger.info("Test is running in "+ data.get("browser") +" browser.");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -51,6 +56,7 @@ public class UserAccountManagementTest extends BaseTests{
 	public void verifyThatUserCannotChangePasswordWhenTheNewPasswordsDoNotMatch(Map<String, String>data) {
 		try {
 			ExtentLogger.pass("Test is running in "+ data.get("browser") +" browser." , true);
+			logger.info("Test is running in "+ data.get("browser") +" browser.");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -64,6 +70,7 @@ public class UserAccountManagementTest extends BaseTests{
 	public void verifyThatUserCannotChangePasswordWhenThePasswoedDoesNotMeetSpecifiedCriteria(Map<String, String>data) {
 		try {
 			ExtentLogger.pass("Test is running in "+ data.get("browser") +" browser." , true);
+			logger.info("Test is running in "+ data.get("browser") +" browser.");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -78,6 +85,7 @@ public class UserAccountManagementTest extends BaseTests{
 	public void verifyThatUserCannotChangePasswordWhenAllFieldsAreEmpty(Map<String, String>data) {
 		try {
 			ExtentLogger.pass("Test is running in "+ data.get("browser") +" browser." , true);
+			logger.info("Test is running in "+ data.get("browser") +" browser.");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

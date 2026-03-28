@@ -18,6 +18,7 @@
 					<systemPropertyVariables>
 						<dataProviderThreadCount>8</dataProviderThreadCount>
 						<testThreadCount>8</testThreadCount>
+						<log4j.configurationFile>log4j2.xml</log4j.configurationFile>
 					</systemPropertyVariables>
 				</configuration>
 			</plugin>
