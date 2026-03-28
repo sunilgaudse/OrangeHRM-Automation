@@ -1,1 +1,71 @@
-/target/
+# =========================
+# Maven
+# =========================
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# =========================
+# Test Reports (DO NOT COMMIT)
+# =========================
+test-output/
+surefire-reports/
+failsafe-reports/
+extent-test-output/
+allure-results/
+allure-report/
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
+
+# =========================
+# Screenshots / Videos
+# =========================
+screenshots/
+videos/
+
+# =========================
+# IDE Files
+# =========================
+# Eclipse
+.project
+.classpath
+.settings/
+
+# IntelliJ
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Temporary / Backup
+# =========================
+*.tmp
+*.bak
+*.swp
+
+# =========================
+# Environment / Secrets
+# =========================
+.env
+*.properties.local
+config/*.secret
+
+# =========================
+# Node (if used for reporting tools)
+# =========================
+node_modules/
