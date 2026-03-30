@@ -42,7 +42,7 @@ public final class FrameworkConstants {
 			return EXTENTREPORTPATH + "/"+System.currentTimeMillis()+"_index.html";
 		}
 		else {
-			return EXTENTREPORTPATH + "/"+"_index.html";
+			return EXTENTREPORTPATH + "/"+"index.html";
 		}
 		
 	}
